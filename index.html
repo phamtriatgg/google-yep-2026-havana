@@ -1,0 +1,2332 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Year-End Party 2026 | Glamorous Havana</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans & Inter & Playfair Display for Havana accents -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    },
+                    colors: {
+                        google: {
+                            blue: '#4285F4',
+                            red: '#EA4335',
+                            yellow: '#FBBC04',
+                            green: '#34A853',
+                            dark: '#202124',
+                            gray: '#5F6368',
+                            light: '#F8F9FA'
+                        },
+                        havana: {
+                            night: '#1A0B0E',
+                            mahogany: '#281115',
+                            coral: '#FF5E3A',
+                            marigold: '#FFB300',
+                            teal: '#00BFA5',
+                            cream: '#FFFDF9',
+                            gold: '#F59E0B'
+                        }
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-delayed': 'float 6s ease-in-out 3s infinite',
+                        'spin-slow': 'spin 20s linear infinite',
+                        'pulse-glow': 'pulseGlow 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-14px) rotate(3deg)' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { opacity: '0.75', transform: 'scale(1)' },
+                            '50%': { opacity: '1', transform: 'scale(1.05)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Festive Havana Fiesta Sunset & Tropical Night Theme */
+        body {
+            background-color: #1A0B0E;
+            background-image: 
+                radial-gradient(circle at 12% 10%, rgba(234, 67, 53, 0.28) 0%, transparent 42%),
+                radial-gradient(circle at 88% 14%, rgba(251, 188, 4, 0.24) 0%, transparent 44%),
+                radial-gradient(circle at 50% 48%, rgba(255, 94, 58, 0.14) 0%, transparent 50%),
+                radial-gradient(circle at 15% 85%, rgba(0, 191, 165, 0.18) 0%, transparent 45%),
+                radial-gradient(circle at 85% 85%, rgba(52, 168, 83, 0.16) 0%, transparent 42%);
+            color: #FFFDF9;
+            overflow-x: hidden;
+        }
+        
+        .google-gradient-text {
+            background: linear-gradient(95deg, #FBBC04 0%, #FF5E3A 35%, #EA4335 68%, #00BFA5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-nav {
+            background: rgba(26, 11, 14, 0.84);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(251, 188, 4, 0.22);
+        }
+
+        .party-glass {
+            background: linear-gradient(145deg, rgba(44, 18, 22, 0.80) 0%, rgba(28, 12, 16, 0.86) 100%);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(251, 188, 4, 0.24);
+            box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.65), inset 0 1px 0 0 rgba(255, 238, 200, 0.12);
+        }
+
+        .havana-card {
+            transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.35s ease;
+        }
+        .havana-card:hover {
+            transform: translateY(-6px) scale(1.01);
+            box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.7), 0 0 28px rgba(251, 188, 4, 0.24);
+            border-color: rgba(251, 188, 4, 0.5);
+        }
+
+        /* Cuban Tile Subtle Geometric Accent Strip */
+        .cuban-tile-border {
+            background-image: repeating-linear-gradient(
+                90deg,
+                #FBBC04 0px, #FBBC04 24px,
+                #EA4335 24px, #EA4335 48px,
+                #00BFA5 48px, #00BFA5 72px,
+                #4285F4 72px, #4285F4 96px
+            );
+        }
+
+        /* Custom warm Havana scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1A0B0E;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #5C282C;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FBBC04;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-google-yellow selection:text-google-dark">
+
+    <!-- Fixed Semi-Transparent Ambient Background Layer -->
+    <div class="fixed inset-0 -z-20 pointer-events-none overflow-hidden">
+        <img 
+            id="ambient-bg-img"
+            src="https://drive.google.com/thumbnail?id=1WL2vq6_iwFYby71NS5JnS7YukajdICKg&sz=w2000" 
+            data-fallbacks='["https://lh3.googleusercontent.com/d/1WL2vq6_iwFYby71NS5JnS7YukajdICKg=w2000","https://drive.google.com/uc?export=view&id=1WL2vq6_iwFYby71NS5JnS7YukajdICKg","Screenshot 2026-11-17 at 5.07.14\u202fPM.jpg","Screenshot 2026-11-17 at 5.07.14 PM.jpg","cruise 1.jpeg"]'
+            onerror="tryNextFallback(this)"
+            alt="Google Year-End Party Havana Fiesta Ambient Background"
+            class="w-full h-full object-cover object-center opacity-40 transition-opacity duration-700"
+        >
+        <!-- Warm Havana Sunset & Mahogany Twilight Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1A0B0E]/75 via-[#281115]/60 to-[#1A0B0E]/92"></div>
+    </div>
+
+    <!-- Subtle Floating Background Photo Picker (in case local file path isn't linked in preview) -->
+    <div class="fixed bottom-4 right-4 z-40">
+        <label for="bg-upload-input" title="Choose or update ambient background photo" class="cursor-pointer inline-flex items-center gap-2 px-3.5 py-2 rounded-full bg-[#241014]/90 hover:bg-[#35171D] text-xs font-semibold text-amber-200 hover:text-white border border-google-yellow/30 backdrop-blur-md shadow-lg transition-all">
+            <i data-lucide="image" class="w-3.5 h-3.5 text-google-yellow"></i>
+            <span>Change BG</span>
+        </label>
+        <input type="file" id="bg-upload-input" accept="image/*" class="hidden">
+    </div>
+
+    <!-- Sticky Directory Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+        <!-- Thin Cuban Fiesta Color Ribbon -->
+        <div class="h-1 w-full cuban-tile-border"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                <!-- Brand Mark -->
+                <a href="#home" class="flex items-center gap-2.5 group">
+                    <div class="flex items-center gap-1.5 bg-amber-500/10 px-2.5 py-1.5 rounded-full border border-google-yellow/30">
+                        <span class="w-2.5 h-2.5 rounded-full bg-google-blue shadow-[0_0_8px_#4285F4] group-hover:scale-125 transition-transform"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-google-red shadow-[0_0_8px_#EA4335] group-hover:scale-125 transition-transform delay-75"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-google-yellow shadow-[0_0_8px_#FBBC04] group-hover:scale-125 transition-transform delay-150"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-google-green shadow-[0_0_8px_#34A853] group-hover:scale-125 transition-transform delay-200"></span>
+                    </div>
+                    <span class="font-extrabold text-lg tracking-tight text-white">YEP <span class="text-google-yellow font-serif italic">'26 • Havana</span></span>
+                </a>
+
+                <!-- Desktop Directory Tabs -->
+                <nav class="hidden md:flex items-center gap-1 bg-amber-500/10 p-1.5 rounded-full border border-google-yellow/25">
+                    <a href="#home" class="nav-tab px-4 py-2 rounded-full text-sm font-bold text-[#1A0B0E] bg-google-yellow shadow-sm transition-all">Home</a>
+                    <a href="#captain-poll-section" onclick="event.preventDefault(); scrollToCaptainPoll();" data-vote-part="true" class="hidden nav-tab px-4 py-2 rounded-full text-sm font-medium text-amber-100/80 hover:text-white transition-all">Captain Vote</a>
+                    <a href="#concept" class="nav-tab px-4 py-2 rounded-full text-sm font-medium text-amber-100/80 hover:text-white transition-all">Concept</a>
+                    <a href="#venue" class="nav-tab px-4 py-2 rounded-full text-sm font-medium text-amber-100/80 hover:text-white transition-all">Venue</a>
+                    <a href="#agenda" class="nav-tab px-4 py-2 rounded-full text-sm font-medium text-amber-100/80 hover:text-white transition-all">Agenda</a>
+                    <a href="#performance" class="nav-tab px-4 py-2 rounded-full text-sm font-medium text-amber-100/80 hover:text-white transition-all">Team Performance</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl text-amber-100 hover:bg-amber-500/15 focus:outline-none" aria-label="Toggle Menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Directory Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#220E12] border-b border-google-yellow/25 px-4 pt-2 pb-4 space-y-1 shadow-2xl">
+            <a href="#home" class="mobile-nav-link block px-4 py-2.5 rounded-xl text-sm font-bold text-google-yellow bg-amber-500/15">Home</a>
+            <a href="#captain-poll-section" onclick="event.preventDefault(); scrollToCaptainPoll();" data-vote-part="true" class="hidden mobile-nav-link block px-4 py-2.5 rounded-xl text-sm font-medium text-amber-100/80 hover:bg-white/5">Captain Vote</a>
+            <a href="#concept" class="mobile-nav-link block px-4 py-2.5 rounded-xl text-sm font-medium text-amber-100/80 hover:bg-white/5">Concept</a>
+            <a href="#venue" class="mobile-nav-link block px-4 py-2.5 rounded-xl text-sm font-medium text-amber-100/80 hover:bg-white/5">Venue</a>
+            <a href="#agenda" class="mobile-nav-link block px-4 py-2.5 rounded-xl text-sm font-medium text-amber-100/80 hover:bg-white/5">Agenda</a>
+            <a href="#performance" class="mobile-nav-link block px-4 py-2.5 rounded-xl text-sm font-medium text-amber-100/80 hover:bg-white/5">Team Performance</a>
+        </div>
+    </header>
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 1: HERO (Headlines, CTA, Compact Countdown + Captain Poll)    -->
+    <!-- ===================================================================== -->
+    <section id="home" class="relative pt-24 pb-16 sm:pt-32 sm:pb-24 overflow-hidden">
+        <!-- Festive Havana & Tropical Botanical Artwork Elements -->
+        <div class="pointer-events-none absolute inset-0 overflow-hidden -z-10">
+            <!-- Overhead Warm Fiesta String Lights -->
+            <svg class="absolute top-16 left-0 w-full h-24 opacity-70" viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none">
+                <path d="M0,10 Q360,95 720,25 T1440,35" stroke="rgba(251,188,4,0.35)" stroke-width="2" fill="none"/>
+                <circle cx="120" cy="36" r="5" fill="#FBBC04" class="animate-pulse"/>
+                <circle cx="280" cy="54" r="5.5" fill="#EA4335" class="animate-pulse"/>
+                <circle cx="450" cy="52" r="5" fill="#FBBC04" class="animate-pulse"/>
+                <circle cx="610" cy="36" r="5" fill="#00BFA5" class="animate-pulse"/>
+                <circle cx="780" cy="32" r="5.5" fill="#FBBC04" class="animate-pulse"/>
+                <circle cx="960" cy="52" r="5" fill="#EA4335" class="animate-pulse"/>
+                <circle cx="1140" cy="55" r="5.5" fill="#FBBC04" class="animate-pulse"/>
+                <circle cx="1310" cy="44" r="5" fill="#34A853" class="animate-pulse"/>
+            </svg>
+
+            <!-- Lush Tropical Monstera & Palm Fronds (Left) -->
+            <svg class="absolute -left-16 top-20 w-80 h-80 text-emerald-500/25 animate-float" viewBox="0 0 200 200" fill="currentColor">
+                <path d="M20,180 C40,110 90,60 170,30 C130,80 100,120 90,180 C70,150 50,160 20,180 Z" />
+                <path d="M10,130 C50,80 100,45 160,15 C115,55 85,90 65,140 Z" opacity="0.65" />
+            </svg>
+            <!-- Havana Golden Sunburst & Hibiscus Glow (Right) -->
+            <svg class="absolute -right-20 top-10 w-96 h-96 text-google-yellow/25 animate-spin-slow" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="100" cy="100" r="45" stroke-dasharray="6 6" />
+                <circle cx="100" cy="100" r="72" stroke-dasharray="12 8" />
+                <circle cx="100" cy="100" r="95" stroke-dasharray="4 10" />
+            </svg>
+            <!-- Floating Fiesta Sparkles -->
+            <span class="absolute top-36 left-[28%] w-3 h-3 rounded-full bg-google-red/75 shadow-[0_0_12px_#EA4335] animate-float"></span>
+            <span class="absolute top-28 right-[32%] w-3 h-3 rounded-sm rotate-45 bg-google-yellow/80 shadow-[0_0_12px_#FBBC04] animate-float-delayed"></span>
+            <span class="absolute bottom-32 left-[18%] w-3.5 h-3.5 rounded-sm rotate-12 bg-havana-teal/70 shadow-[0_0_12px_#00BFA5] animate-float-delayed"></span>
+            <span class="absolute top-64 right-[14%] w-3 h-3 rounded-full bg-google-green/70 animate-float"></span>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Top Above-the-Fold Row: Headlines & Button (Left) + Larger Countdown (Right) -->
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 mb-12 sm:mb-16">
+                
+                <!-- Left: Headlines & Performance Captain Vote CTA -->
+                <div class="max-w-2xl space-y-5">
+                    <!-- Date & Theme Pill -->
+                    <div class="inline-flex flex-wrap items-center gap-2.5 px-4 py-1.5 rounded-full bg-amber-500/15 border border-google-yellow/40 shadow-lg backdrop-blur-md">
+                        <span class="flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-google-yellow">
+                            <span class="w-2 h-2 rounded-full bg-google-yellow animate-ping"></span>
+                            Save The Date
+                        </span>
+                        <span class="text-amber-200/40">•</span>
+                        <span class="text-xs sm:text-sm font-bold text-amber-50">December 11th, 2026</span>
+                        <span class="text-amber-200/40">•</span>
+                        <span class="text-xs sm:text-sm font-serif italic font-semibold text-orange-300">🌺 Noche de Habana</span>
+                    </div>
+
+                    <!-- Primary Headline -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-amber-50 leading-[1.08] drop-shadow-sm">
+                        Google <br />
+                        <span class="google-gradient-text font-serif italic">Year-End Party</span> <br />
+                        <span class="inline-flex flex-wrap items-center gap-3">
+                            2026
+                            <span class="font-serif italic font-normal text-2xl sm:text-4xl text-google-yellow">— Havana Fiesta</span>
+                        </span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-amber-100/90 max-w-xl leading-relaxed">
+                        Set sail into a vibrant twilight night on the Saigon River, with rhythms, craft mixology, and unforgettable Googler performances await on <strong class="text-google-yellow font-semibold">Dec 11th, 2026</strong>.
+                    </p>
+
+                    <!-- Prominent CTA Button to Captain Vote Poll -->
+                    <div class="hidden pt-1" data-vote-part="true">
+                        <button 
+                            type="button" 
+                            onclick="scrollToCaptainPoll()"
+                            class="inline-flex items-center gap-3 px-7 py-4 rounded-2xl bg-gradient-to-r from-google-red via-orange-500 to-google-yellow hover:brightness-110 active:scale-[0.98] text-white font-extrabold text-base sm:text-lg shadow-xl shadow-google-red/35 border border-yellow-200/30 transition-all group cursor-pointer"
+                        >
+                            <i data-lucide="crown" class="w-5 h-5 text-white"></i>
+                            <span>Performance Captain Vote</span>
+                            <i data-lucide="arrow-down" class="w-5 h-5 group-hover:translate-y-1 transition-transform"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right: "I'm In For The Party" CTA + Larger Live Countdown Timer in Havana Arch Styling -->
+                <div class="lg:shrink-0 lg:self-center flex flex-col gap-4">
+                    
+                    <!-- "I'm In For The Party" RSVP Card & CTA Button Above Countdown -->
+                    <div class="party-glass rounded-[28px] p-4 sm:p-5 border-2 border-google-yellow/45 shadow-2xl relative overflow-hidden">
+                        <div class="absolute -top-10 -left-10 w-28 h-28 rounded-full bg-havana-teal/20 blur-2xl pointer-events-none"></div>
+                        <div class="flex items-center justify-between gap-3 mb-3">
+                            <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-havana-teal">
+                                <span id="rsvp-status-dot" class="w-2 h-2 rounded-full bg-havana-teal animate-ping"></span>
+                                Official Party RSVP
+                            </span>
+                            <span class="text-[11px] font-serif italic text-amber-200/80">Googlers Only</span>
+                        </div>
+
+                        <form id="party-rsvp-form" class="flex flex-col sm:flex-row gap-2.5">
+                            <div id="rsvp-input-wrapper" class="relative flex-1 flex items-center transition-all">
+                                <input 
+                                    type="text" 
+                                    id="party-rsvp-email" 
+                                    placeholder="Enter your LDAP" 
+                                    required
+                                    autocomplete="off"
+                                    class="w-full pl-4 pr-28 py-3.5 rounded-2xl bg-[#16080B]/95 border border-google-yellow/35 text-sm text-amber-50 placeholder-amber-200/45 focus:outline-none focus:border-google-yellow focus:ring-2 focus:ring-google-yellow/30 transition-all disabled:bg-[#1E1A1B]/80 disabled:text-amber-200/40 disabled:border-white/10 disabled:cursor-not-allowed"
+                                >
+                                <span id="rsvp-domain-badge" class="absolute right-3.5 text-xs font-bold text-amber-200/60 pointer-events-none select-none bg-[#241014] px-2 py-1 rounded-lg border border-google-yellow/20 transition-all">
+                                    @google.com
+                                </span>
+                            </div>
+                            <button 
+                                type="submit" 
+                                id="im-in-party-btn"
+                                class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-havana-teal via-emerald-500 to-google-green hover:brightness-110 active:scale-[0.98] text-[#120608] font-extrabold text-sm sm:text-base shadow-xl shadow-havana-teal/25 border border-emerald-200/40 transition-all cursor-pointer shrink-0 group disabled:cursor-default disabled:hover:brightness-100 disabled:active:scale-100"
+                            >
+                                <i data-lucide="party-popper" class="w-5 h-5 text-[#120608] group-hover:rotate-12 transition-transform"></i>
+                                <span>I'm In For The Party</span>
+                            </button>
+                        </form>
+                        <p id="rsvp-inline-status" class="text-[11px] text-amber-200/70 mt-2">
+                            Enter your LDAP &amp; click above to confirm your spot!
+                        </p>
+                    </div>
+
+                    <div class="party-glass rounded-[32px] p-6 sm:p-8 shadow-2xl inline-block w-full sm:w-auto border-2 border-google-yellow/35 relative overflow-hidden">
+                        <div class="absolute -top-12 -right-12 w-32 h-32 rounded-full bg-google-yellow/15 blur-2xl pointer-events-none"></div>
+                        <div class="flex items-center justify-between gap-6 mb-4 sm:mb-5">
+                            <span class="text-xs sm:text-sm font-extrabold uppercase tracking-widest text-google-yellow flex items-center gap-2">
+                                <i data-lucide="flame" class="w-4 h-4 sm:w-5 sm:h-5 text-orange-400"></i>
+                                Fiesta Countdown
+                            </span>
+                            <span class="text-xs sm:text-sm font-serif italic font-bold text-amber-100 bg-amber-500/20 px-3.5 py-1 rounded-full border border-google-yellow/30">Dec 11, 2026 • GMT+7</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-3.5 sm:gap-5">
+                            <!-- Days -->
+                            <div class="bg-[#16080B]/90 rounded-2xl px-5 py-5 sm:px-7 sm:py-6 text-center border-2 border-google-yellow/60 shadow-[0_0_24px_rgba(251,188,4,0.2)] min-w-[96px] sm:min-w-[124px]">
+                                <span id="cd-days" class="block text-4xl sm:text-6xl font-serif font-bold text-google-yellow tabular-nums leading-none tracking-tight">--</span>
+                                <span class="text-xs sm:text-sm font-bold uppercase tracking-widest text-amber-200/80 mt-2.5 block">Days</span>
+                            </div>
+                            <!-- Hours -->
+                            <div class="bg-[#16080B]/90 rounded-2xl px-5 py-5 sm:px-7 sm:py-6 text-center border-2 border-google-red/60 shadow-[0_0_24px_rgba(234,67,53,0.2)] min-w-[96px] sm:min-w-[124px]">
+                                <span id="cd-hours" class="block text-4xl sm:text-6xl font-serif font-bold text-orange-400 tabular-nums leading-none tracking-tight">--</span>
+                                <span class="text-xs sm:text-sm font-bold uppercase tracking-widest text-amber-200/80 mt-2.5 block">Hours</span>
+                            </div>
+                            <!-- Minutes -->
+                            <div class="bg-[#16080B]/90 rounded-2xl px-5 py-5 sm:px-7 sm:py-6 text-center border-2 border-havana-teal/60 shadow-[0_0_24px_rgba(0,191,165,0.2)] min-w-[96px] sm:min-w-[124px]">
+                                <span id="cd-minutes" class="block text-4xl sm:text-6xl font-serif font-bold text-havana-teal tabular-nums leading-none tracking-tight">--</span>
+                                <span class="text-xs sm:text-sm font-bold uppercase tracking-widest text-amber-200/80 mt-2.5 block">Mins</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Interactive Captain Vote Poll -->
+            <div class="hidden max-w-3xl mx-auto" id="captain-poll-section" data-vote-part="true">
+                <div id="captain-poll-card" class="party-glass rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden transition-all duration-500 border-2 border-google-yellow/35">
+                    <!-- Top Cuban Fiesta Tile Bar -->
+                    <div class="absolute top-0 left-0 right-0 h-2 cuban-tile-border"></div>
+
+                    <div class="flex items-start justify-between gap-4 mb-3 pt-2">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-google-yellow/20 text-google-yellow border border-google-yellow/40">
+                                <i data-lucide="crown" class="w-3.5 h-3.5 text-google-yellow"></i>
+                                Live Fiesta Poll
+                            </span>
+                            <span id="poll-sync-status" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-semibold bg-emerald-500/15 text-emerald-300 border border-emerald-400/30">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                                Connecting Live Sync...
+                            </span>
+                            <!-- Compact Poll Closing Countdown (Until 5:00 PM Nov 23, 2026 GMT+7) -->
+                            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold bg-google-red/20 text-amber-100 border border-google-red/40 shadow-sm">
+                                <i data-lucide="clock" class="w-3.5 h-3.5 text-orange-400"></i>
+                                <span class="text-amber-200/80">Closes Nov 23, 5PM (GMT+7):</span>
+                                <span class="inline-flex items-center gap-1 font-mono font-extrabold text-google-yellow tabular-nums">
+                                    <span id="poll-cd-days">--</span>d
+                                    <span>:</span>
+                                    <span id="poll-cd-hours">--</span>h
+                                    <span>:</span>
+                                    <span id="poll-cd-minutes">--</span>m
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <button 
+                                type="button" 
+                                id="poll-manual-refresh-btn" 
+                                title="Sync latest options and votes now"
+                                class="p-1.5 rounded-full bg-amber-500/10 hover:bg-amber-500/25 text-amber-200 border border-google-yellow/25 transition-all cursor-pointer"
+                            >
+                                <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
+                            </button>
+                            <span id="total-votes-badge" class="text-xs font-bold text-amber-100 bg-amber-500/15 px-3 py-1 rounded-full border border-google-yellow/25">
+                                0 votes
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Exact Requested Poll Label -->
+                    <h2 class="text-lg sm:text-xl font-bold text-amber-50 leading-snug mb-2">
+                        Captain Vote: Feel free to add and/or vote for the person who you think would make a great team leader.
+                    </h2>
+                    <p class="text-xs text-amber-200/75 mb-5">
+                        Nominate a Googler below (your vote is cast automatically when adding!), or click the <strong class="text-google-yellow">Vote</strong> button next to any candidate's name.
+                    </p>
+
+                    <!-- Poll Options List -->
+                    <div id="poll-options-container" class="space-y-3 max-h-[360px] overflow-y-auto pr-1 mb-5">
+                        <!-- Dynamically populated via JS -->
+                    </div>
+
+                    <!-- Add New Candidate Input Form -->
+                    <form id="add-candidate-form" class="pt-4 border-t border-google-yellow/20">
+                        <label for="new-candidate-input" class="block text-xs font-bold text-amber-200/90 uppercase tracking-wider mb-2">
+                            Add a Candidate Option to the Poll
+                        </label>
+                        <div class="flex gap-2">
+                            <input 
+                                type="text" 
+                                id="new-candidate-input" 
+                                placeholder="Enter Googler's name to add as an option..." 
+                                maxlength="40"
+                                class="flex-1 px-4 py-2.5 rounded-xl bg-[#16080B]/90 border border-google-yellow/30 text-sm text-amber-50 placeholder-amber-200/40 focus:outline-none focus:border-google-yellow focus:ring-2 focus:ring-google-yellow/25 transition-all"
+                            >
+                            <button 
+                                type="submit" 
+                                id="add-candidate-submit-btn"
+                                class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-google-yellow to-amber-500 hover:brightness-110 active:scale-95 text-[#1A0B0E] text-sm font-extrabold shadow-md transition-all flex items-center gap-1.5 shrink-0 cursor-pointer"
+                            >
+                                <i data-lucide="plus" class="w-4 h-4"></i>
+                                Add Option
+                            </button>
+                        </div>
+                        <p id="poll-feedback" class="text-xs font-semibold text-google-green mt-2 hidden"></p>
+                        <div class="mt-3 pt-2 border-t border-white/5 flex flex-wrap items-center justify-between gap-2 text-[11px] text-amber-200/50">
+                            <span> Voter ID: <code id="voter-id-display" class="text-amber-200/75 font-mono">Connecting...</code></span>
+                            <span>Real-Time Multi-Device Firebase Sync • Click "Vote" on any option above</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 2: CONCEPT (Glamorous Havana + 2 Dresscode Guides)            -->
+    <!-- ===================================================================== -->
+    <section id="concept" class="py-20 sm:py-28 bg-[#220E12]/75 backdrop-blur-sm border-t border-google-yellow/20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="max-w-3xl mb-14">
+                <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-google-yellow mb-3">
+                    <span class="w-6 h-0.5 bg-google-yellow rounded-full"></span>
+                    🌺 The Party Vibe &amp; Concept
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-amber-50 tracking-tight mb-5">
+                    Welcome to <span class="font-serif italic text-transparent bg-clip-text bg-gradient-to-r from-google-yellow via-orange-400 to-google-red">Havana Fiesta!</span>
+                </h2>
+                <p class="text-base sm:text-lg text-amber-100/85 leading-relaxed">
+                    Step into a vibrant celebration inspired by the Havana Fiesta spirit - where the skyline, rhythm, and timeless glamour comes together for a night of connect, great fun and look ahead.
+                </p>
+            </div>
+
+            <!-- 2 Illustrating Visual Cards Stacked Vertically (01 above 02) -->
+            <div class="flex flex-col gap-10 max-w-5xl mx-auto">
+                
+                <!-- Card 1: Suggested Dresscode -->
+                <div class="havana-card group rounded-3xl overflow-hidden party-glass flex flex-col">
+                    <div class="relative overflow-hidden bg-[#16080B]">
+                        <img 
+                            src="https://drive.google.com/thumbnail?id=1uwnbBlb-AglbsC48yoTHdAAs7Pc6ZZ8q&sz=w2000" 
+                            data-fallbacks='["https://lh3.googleusercontent.com/d/1uwnbBlb-AglbsC48yoTHdAAs7Pc6ZZ8q=w2000","https://drive.google.com/uc?export=view&id=1uwnbBlb-AglbsC48yoTHdAAs7Pc6ZZ8q","dee3c9c4952c15724c3d.jpg"]'
+                            onerror="tryNextFallback(this)"
+                            alt="Suggested Dresscode — Fiesta Havana Tropical Glam Women's Style Guide" 
+                            class="w-full h-auto object-contain block"
+                        >
+                        <div class="absolute top-4 left-4 bg-[#1A0B0E]/90 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-bold text-google-yellow border border-google-yellow/40 shadow-lg">
+                            01 • Suggested Dresscode
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <div>
+                            <h3 class="font-serif italic font-bold text-xl text-amber-50 mb-1">Tropical Chic &amp; Glam — Women’s Style Guide</h3>
+                            <p class="text-sm text-amber-100/80 leading-relaxed">
+                                Flowing evening silhouettes, vibrant sunlit hues, statement gold jewelry, and Google-colored flair.
+                            </p>
+                        </div>
+                        <div class="flex gap-1.5 shrink-0">
+                            <span class="w-4 h-4 rounded-full bg-google-yellow shadow-[0_0_8px_#FBBC04]"></span>
+                            <span class="w-4 h-4 rounded-full bg-google-red shadow-[0_0_8px_#EA4335]"></span>
+                            <span class="w-4 h-4 rounded-full bg-havana-teal shadow-[0_0_8px_#00BFA5]"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Suggested Dresscode -->
+                <div class="havana-card group rounded-3xl overflow-hidden party-glass flex flex-col">
+                    <div class="relative overflow-hidden bg-[#16080B]">
+                        <img 
+                            src="https://drive.google.com/thumbnail?id=1Rif9q9lu3YA-GpKKBiDk0_9IrOGK6vii&sz=w2000" 
+                            data-fallbacks='["https://lh3.googleusercontent.com/d/1Rif9q9lu3YA-GpKKBiDk0_9IrOGK6vii=w2000","https://drive.google.com/uc?export=view&id=1Rif9q9lu3YA-GpKKBiDk0_9IrOGK6vii"]'
+                            onerror="tryNextFallback(this)"
+                            alt="Suggested Dresscode — Havana Linen & Fedora Style Guide" 
+                            class="w-full h-auto object-contain block"
+                        >
+                        <div class="absolute top-4 left-4 bg-[#1A0B0E]/90 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-bold text-orange-400 border border-orange-400/40 shadow-lg">
+                            02 • Suggested Dresscode
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <div>
+                            <h3 class="font-serif italic font-bold text-xl text-amber-50 mb-1">Havana Linen &amp; Fedoras — Men’s Style Guide</h3>
+                            <p class="text-sm text-amber-100/80 leading-relaxed">
+                                Breezy Guayabera shirts, crisp tailored linen, Panama hats, and bold tropical prints.
+                            </p>
+                        </div>
+                        <div class="flex gap-1.5 shrink-0">
+                            <span class="w-4 h-4 rounded-full bg-google-red shadow-[0_0_8px_#EA4335]"></span>
+                            <span class="w-4 h-4 rounded-full bg-google-yellow shadow-[0_0_8px_#FBBC04]"></span>
+                            <span class="w-4 h-4 rounded-full bg-google-green shadow-[0_0_8px_#34A853]"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 3: VENUE (Rever Mixology Cruise)                              -->
+    <!-- ===================================================================== -->
+    <section id="venue" class="py-20 sm:py-28 border-t border-google-yellow/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="party-glass rounded-[32px] p-6 sm:p-12 shadow-2xl relative overflow-hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                    
+                    <!-- Venue Visual / Single Google Drive Video Frame (13NrP4c-U0kIgBfMuqT8V1suHf-jlfJor) -->
+                    <div class="lg:col-span-6">
+                        <div class="relative rounded-3xl overflow-hidden bg-[#16080B] aspect-[4/3] group shadow-xl border border-google-yellow/30">
+                            <!-- High-Res Poster Backdrop (visible while stream connects) -->
+                            <img
+                                id="venue-video-poster"
+                                src="https://drive.google.com/thumbnail?id=13NrP4c-U0kIgBfMuqT8V1suHf-jlfJor&sz=w1600"
+                                alt="Rever Mixology Cruise Fireworks View"
+                                class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500"
+                            >
+
+                            <!-- Live Animated Fireworks & River Reflections Canvas Overlay (Guarantees instant motion inside Google Sites iframe even if Google Drive blocks third-party video cookies) -->
+                            <canvas
+                                id="venue-live-fireworks-canvas"
+                                class="absolute inset-0 w-full h-full object-cover pointer-events-none z-[12] transition-opacity duration-700"
+                            ></canvas>
+
+                            <!-- Native HTML5 Autoplay & Looping Video Player -->
+                            <video
+                                id="venue-native-video"
+                                class="relative z-[14] w-full h-full object-cover opacity-0 transition-opacity duration-500"
+                                autoplay
+                                muted
+                                loop
+                                playsinline
+                                webkit-playsinline
+                                preload="auto"
+                                poster="https://drive.google.com/thumbnail?id=13NrP4c-U0kIgBfMuqT8V1suHf-jlfJor&sz=w1600"
+                            ></video>
+
+                            <!--Top-Right Pop-Out Button Blocker & Seamless Cover -->
+                            <div 
+                                class="absolute top-0 right-0 w-24 h-20 z-30 select-none"
+                                style="background: radial-gradient(circle at top right, rgba(22,8,11,0.98) 45%, rgba(22,8,11,0.75) 72%, transparent 100%);"
+                                onclick="event.stopPropagation(); event.preventDefault();"
+                                title="Rever Mixology Cruise"
+                            >
+                                <div class="absolute top-4 right-4 bg-[#1A0B0E]/90 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-1.5 border border-google-yellow/35 shadow-md">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                                    <span class="text-[11px] font-bold text-amber-100">Flycam HD</span>
+                                </div>
+                            </div>
+
+                            <!-- Subtle Bottom Gradient for Caption Readability (pointer-events-none so video controls remain clickable) -->
+                            <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#1A0B0E]/90 via-[#1A0B0E]/40 to-transparent pointer-events-none z-20"></div>
+                            
+                            <!-- Floating Venue Badge -->
+                            <div class="absolute top-4 left-4 bg-[#1A0B0E]/85 backdrop-blur-md px-3.5 py-1.5 rounded-full flex items-center gap-2 border border-google-yellow/30 z-20 pointer-events-none">
+                                <span class="w-2 h-2 rounded-full bg-google-yellow shadow-[0_0_8px_#FBBC04]"></span>
+                                <span class="text-xs font-bold text-amber-50">Saigon River Fiesta Yacht</span>
+                            </div>
+
+                            <!-- Bottom Overlay Caption -->
+                            <div class="absolute bottom-5 left-5 right-5 text-white flex items-end justify-between gap-4 z-20 pointer-events-none">
+                                <div>
+                                    <p class="text-xs uppercase tracking-widest text-google-yellow font-bold mb-1">Boarding Venue</p>
+                                    <h4 class="text-xl sm:text-2xl font-serif italic font-bold text-amber-50">Rever Mixology Cruise</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Venue Details & Link -->
+                    <div class="lg:col-span-6 space-y-6">
+                        <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-google-yellow">
+                            <span class="w-6 h-0.5 bg-google-yellow rounded-full"></span>
+                            The Floating Havana Stage
+                        </div>
+
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-amber-50 tracking-tight leading-tight">
+                            Set Sail Aboard <br />
+                            <span class="font-serif italic text-transparent bg-clip-text bg-gradient-to-r from-google-yellow via-orange-400 to-havana-teal">
+                                Rever Mixology Cruise <br />
+                                <span class="whitespace-nowrap">Dinner &amp; Lounge</span>
+                            </span>
+                        </h2>
+
+                        <p class="text-base text-amber-100/85 leading-relaxed">
+                            Experience Ho Chi Minh City’s glittering night skyline from the water. Rever Mixology Cruise combines sleek contemporary yacht architecture, open-air party decks, and world-class craft mixology—the ultimate floating stage for our Glamorous Havana fiesta.
+                        </p>
+
+                        <!-- Official Website & Google Maps CTAs -->
+                        <div class="flex flex-wrap items-center gap-3 pt-2">
+                            <a 
+                                href="https://revercruises.com/vi/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-gradient-to-r from-google-yellow to-amber-500 hover:brightness-110 text-[#1A0B0E] text-sm font-extrabold shadow-lg transition-all group"
+                            >
+                                Explore Rever Mixology Cruise
+                                <i data-lucide="arrow-up-right" class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+                            </a>
+                            <a 
+                                id="venue-directions-btn"
+                                href="https://www.google.com/maps/dir/?api=1&destination=5+%C4%90.+Nguy%E1%BB%85n+T%E1%BA%A5t+Th%C3%A0nh,+X%C3%B3m+Chi%E1%BA%BFu,+H%E1%BB%93+Ch%C3%AD+Minh+700000&destination_place_id=ChIJ9cFI-2kvdTERU_PQ_r-Ov4A&travelmode=driving" 
+                                onclick="openDirectionsFromCurrentLocation(event)"
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                class="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-amber-500/15 hover:bg-amber-500/25 text-amber-50 text-sm font-bold border border-google-yellow/40 shadow-lg transition-all group cursor-pointer"
+                            >
+                                <i data-lucide="map-pin" class="w-4 h-4 text-google-yellow group-hover:scale-110 transition-transform"></i>
+                                <span id="venue-directions-label">View on Map</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 4: AGENDA (Timeline Placeholder Ready for Details)            -->
+    <!-- ===================================================================== -->
+    <section id="agenda" class="py-20 sm:py-28 bg-[#220E12]/75 backdrop-blur-sm border-t border-google-yellow/20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-google-yellow mb-3">
+                    <span class="w-2 h-2 rounded-full bg-google-yellow shadow-[0_0_8px_#FBBC04]"></span>
+                    Fiesta Lineup • Dec 11, 2026
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-serif italic font-bold text-amber-50 tracking-tight mb-4">
+                    Evening Agenda
+                </h2>
+                <p class="text-base text-amber-100/80">
+                    Our party lineup is currently being curated. Here is a sneak peek at the flow of the night—exact set times will drop soon!
+                </p>
+            </div>
+
+            <!-- Clean Vertical Timeline -->
+            <div class="relative border-l-2 border-dashed border-google-yellow/35 ml-4 sm:ml-8 space-y-10 pb-4">
+                
+                <!-- Item 1 -->
+                <div class="relative pl-8 sm:pl-12">
+                    <span class="absolute -left-[11px] top-1 w-5 h-5 rounded-full bg-google-yellow ring-4 ring-[#220E12] shadow-[0_0_12px_#FBBC04]"></span>
+                    <div class="party-glass rounded-2xl p-6">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-google-yellow bg-google-yellow/15 px-3 py-1 rounded-full border border-google-yellow/30">Evening Check-in • TBA</span>
+                            <span class="text-xs font-serif italic font-bold text-amber-200/70">Act 01</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-amber-50">Welcome Aboard &amp; Sunset Mojitos</h3>
+                        <p class="text-sm text-amber-100/80 mt-1">Pier boarding, Havana glam photo booth arrivals, and welcome cocktails on the upper deck.</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="relative pl-8 sm:pl-12">
+                    <span class="absolute -left-[11px] top-1 w-5 h-5 rounded-full bg-google-red ring-4 ring-[#220E12] shadow-[0_0_12px_#EA4335]"></span>
+                    <div class="party-glass rounded-2xl p-6">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-orange-400 bg-google-red/15 px-3 py-1 rounded-full border border-google-red/30">Cruise Departure • TBA</span>
+                            <span class="text-xs font-serif italic font-bold text-amber-200/70">Act 02</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-amber-50">Opening Toast &amp; Havana Dinner Feast</h3>
+                        <p class="text-sm text-amber-100/80 mt-1">Setting sail along the Saigon River with a curated dining feast and 2026 celebration highlights.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="relative pl-8 sm:pl-12">
+                    <span class="absolute -left-[11px] top-1 w-5 h-5 rounded-full bg-havana-teal ring-4 ring-[#220E12] shadow-[0_0_12px_#00BFA5]"></span>
+                    <div class="party-glass rounded-2xl p-6">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-havana-teal bg-havana-teal/15 px-3 py-1 rounded-full border border-havana-teal/30">Main Stage • TBA</span>
+                            <span class="text-xs font-serif italic font-bold text-amber-200/70">Act 03</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-amber-50">Team Performance Showdown &amp; Awards</h3>
+                        <p class="text-sm text-amber-100/80 mt-1">Googler crews take the spotlight to compete for the Glamorous Havana crown.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="relative pl-8 sm:pl-12">
+                    <span class="absolute -left-[11px] top-1 w-5 h-5 rounded-full bg-google-green ring-4 ring-[#220E12] shadow-[0_0_12px_#34A853]"></span>
+                    <div class="party-glass rounded-2xl p-6">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-google-green bg-google-green/15 px-3 py-1 rounded-full border border-google-green/30">After-Party • TBA</span>
+                            <span class="text-xs font-serif italic font-bold text-amber-200/70">Act 04</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-amber-50">Live DJ Set, Dancing &amp; Lucky Draw</h3>
+                        <p class="text-sm text-amber-100/80 mt-1">Late-night river breeze, electric Latin &amp; club DJ beats, and grand prize giveaways.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- SECTION 5: TEAM PERFORMANCE (Format / Board of Judges / Prizes)       -->
+    <!-- ===================================================================== -->
+    <section id="performance" class="py-20 sm:py-28 border-t border-google-yellow/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-14">
+                <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-google-yellow mb-3">
+                    <span class="w-6 h-0.5 bg-google-yellow rounded-full"></span>
+                    Spotlight Showdown
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-serif italic font-bold text-amber-50 tracking-tight mb-4">
+                    Team Performance
+                </h2>
+                <p class="text-base sm:text-lg text-amber-100/85">
+                    Led by our voted Captains from the poll above, teams will bring the heat of Havana to the cruise stage. Rally your crew, rehearse your moves, and steal the spotlight!
+                </p>
+            </div>
+
+            <!-- 3 Pillars Grid: Format, Board of Judges, Prizes -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                
+                <!-- Card 1: The Format -->
+                <div class="havana-card party-glass rounded-3xl p-8 relative overflow-hidden">
+                    <div class="w-12 h-12 rounded-2xl bg-google-blue/20 text-google-blue flex items-center justify-center mb-6 border border-google-blue/30">
+                        <i data-lucide="users" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="inline-flex items-center gap-2 text-xl sm:text-2xl font-extrabold text-google-blue mb-5 pb-2 border-b-2 border-google-blue/50">
+                        <span>01 •</span>
+                        <span>The Format</span>
+                    </h3>
+                    <p class="text-base font-medium text-amber-100/80 italic">
+                        To be announced soon!
+                    </p>
+                </div>
+
+                <!-- Card 2: Board of Judges -->
+                <div class="havana-card party-glass rounded-3xl p-8 relative overflow-hidden">
+                    <div class="w-12 h-12 rounded-2xl bg-google-red/20 text-google-red flex items-center justify-center mb-6 border border-google-red/30">
+                        <i data-lucide="gavel" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="inline-flex items-center gap-2 text-xl sm:text-2xl font-extrabold text-google-red mb-5 pb-2 border-b-2 border-google-red/50">
+                        <span>02 •</span>
+                        <span>Board of Judges</span>
+                    </h3>
+                    <p class="text-base font-medium text-amber-100/80 italic">
+                        To be announced soon!
+                    </p>
+                </div>
+
+                <!-- Card 3: The Prizes -->
+                <div class="havana-card party-glass rounded-3xl p-8 relative overflow-hidden">
+                    <div class="w-12 h-12 rounded-2xl bg-google-yellow/20 text-google-yellow flex items-center justify-center mb-6 border border-google-yellow/30">
+                        <i data-lucide="trophy" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="inline-flex items-center gap-2 text-xl sm:text-2xl font-extrabold text-google-yellow mb-5 pb-2 border-b-2 border-google-yellow/50">
+                        <span>03 •</span>
+                        <span>The Prizes</span>
+                    </h3>
+                    <p class="text-base font-medium text-amber-100/80 italic">
+                        To be announced soon!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#120608] border-t border-google-yellow/25 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-google-blue"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-google-red"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-google-yellow"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-google-green"></span>
+                <span class="text-sm font-extrabold text-amber-50 ml-1">Google Year-End Party 2026</span>
+            </div>
+            <p class="text-xs text-amber-200/70 text-center sm:text-right font-serif italic">
+                🌺 Glamorous Havana Fiesta • December 11th, 2026 • Rever Mixology Cruise
+            </p>
+        </div>
+    </footer>
+
+    <!-- Congratulation RSVP Popup Modal & Confetti Animation -->
+    <div id="rsvp-congrats-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/75 backdrop-blur-md transition-opacity duration-300 opacity-0">
+        <!-- Confetti Canvas Overlay -->
+        <canvas id="rsvp-confetti-canvas" class="absolute inset-0 w-full h-full pointer-events-none"></canvas>
+
+        <!-- Popup Card -->
+        <div id="rsvp-congrats-card" class="relative z-10 max-w-md w-full party-glass rounded-[32px] p-7 sm:p-9 border-2 border-google-yellow/60 shadow-[0_0_60px_rgba(251,188,4,0.35)] text-center transform scale-90 transition-all duration-300 overflow-hidden">
+            <!-- Top Cuban Tile Border -->
+            <div class="absolute top-0 left-0 right-0 h-2 cuban-tile-border"></div>
+
+            <!-- Glowing Ambient Orbs -->
+            <div class="absolute -top-16 -left-16 w-40 h-40 rounded-full bg-google-yellow/20 blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-16 -right-16 w-40 h-40 rounded-full bg-havana-teal/25 blur-3xl pointer-events-none"></div>
+
+            <!-- Animated Celebratory Icon Badge -->
+            <div class="mx-auto mb-5 w-20 h-20 rounded-3xl bg-gradient-to-br from-google-yellow via-orange-400 to-google-red p-0.5 shadow-xl shadow-google-yellow/25 animate-bounce">
+                <div class="w-full h-full bg-[#1A0B0E] rounded-[22px] flex items-center justify-center">
+                    <span class="text-4xl select-none">🎉</span>
+                </div>
+            </div>
+
+            <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-havana-teal/20 border border-havana-teal/40 text-havana-teal text-xs font-extrabold uppercase tracking-widest mb-3">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                ¡Bienvenido a la Fiesta!
+            </div>
+
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-amber-50 tracking-tight mb-2">
+                Congratulations, <br />
+                <span class="font-serif italic text-google-yellow">You're On The List!</span>
+            </h3>
+
+            <p class="text-sm text-amber-100/85 leading-relaxed mb-4">
+                Your boarding pass for <strong id="rsvp-congrats-email" class="text-havana-teal font-bold">googler@google.com</strong> is officially locked in for the <span class="text-google-yellow font-semibold">Glamorous Havana Year-End Party</span>!
+            </p>
+
+            <!-- Mini Boarding Pass Summary Pill -->
+            <div class="bg-[#16080B]/90 border border-google-yellow/30 rounded-2xl p-3.5 mb-6 text-left flex items-center justify-between gap-3">
+                <div>
+                    <span class="block text-[10px] uppercase tracking-widest text-amber-200/60 font-bold">Date &amp; Venue</span>
+                    <span class="text-xs sm:text-sm font-bold text-amber-50">Dec 11, 2026 • Rever Mixology Cruise</span>
+                </div>
+                <span class="px-2.5 py-1 rounded-lg bg-google-green/20 border border-google-green/40 text-google-green text-xs font-extrabold shrink-0">
+                    CONFIRMED
+                </span>
+            </div>
+
+            <button 
+                type="button" 
+                onclick="closeRsvpCongratsModal()"
+                class="w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-google-yellow via-amber-400 to-orange-500 hover:brightness-110 active:scale-[0.98] text-[#1A0B0E] font-extrabold text-sm sm:text-base shadow-xl shadow-google-yellow/25 transition-all cursor-pointer"
+            >
+                Awesome, See You Aboard! 🥂
+            </button>
+        </div>
+    </div>
+
+    <!-- Non-module Global Helpers -->
+    <script>
+        // RSVP Congratulation Modal & Confetti Animation Controller
+        let confettiAnimFrame = null;
+
+        function launchRsvpConfetti() {
+            const canvas = document.getElementById('rsvp-confetti-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            const colors = ['#FBBC04', '#EA4335', '#00BFA5', '#4285F4', '#34A853', '#FF5E3A', '#FFFDF9'];
+            const particles = Array.from({ length: 110 }, () => ({
+                x: canvas.width / 2 + (Math.random() - 0.5) * 180,
+                y: canvas.height / 2 + (Math.random() - 0.5) * 80,
+                vx: (Math.random() - 0.5) * 16,
+                vy: -Math.random() * 15 - 4,
+                size: Math.random() * 8 + 5,
+                color: colors[Math.floor(Math.random() * colors.length)],
+                rotation: Math.random() * 360,
+                rotationSpeed: (Math.random() - 0.5) * 12,
+                gravity: 0.32,
+                drag: 0.985,
+                opacity: 1
+            }));
+
+            if (confettiAnimFrame) cancelAnimationFrame(confettiAnimFrame);
+
+            function renderFrame() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                let activeCount = 0;
+
+                particles.forEach((p) => {
+                    p.vx *= p.drag;
+                    p.vy = p.vy * p.drag + p.gravity;
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    p.rotation += p.rotationSpeed;
+
+                    if (p.y > canvas.height - 60) {
+                        p.opacity -= 0.03;
+                    }
+
+                    if (p.opacity > 0 && p.y < canvas.height + 40) {
+                        activeCount++;
+                        ctx.save();
+                        ctx.globalAlpha = Math.max(0, p.opacity);
+                        ctx.translate(p.x, p.y);
+                        ctx.rotate((p.rotation * Math.PI) / 180);
+                        ctx.fillStyle = p.color;
+                        ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size * 0.65);
+                        ctx.restore();
+                    }
+                });
+
+                if (activeCount > 0) {
+                    confettiAnimFrame = requestAnimationFrame(renderFrame);
+                } else {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                }
+            }
+
+            renderFrame();
+        }
+
+        function openRsvpCongratsModal(fullEmail) {
+            const modal = document.getElementById('rsvp-congrats-modal');
+            const card = document.getElementById('rsvp-congrats-card');
+            const emailEl = document.getElementById('rsvp-congrats-email');
+            if (!modal || !card) return;
+
+            if (emailEl && fullEmail) {
+                emailEl.textContent = fullEmail;
+            }
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            // Trigger smooth entrance transition
+            requestAnimationFrame(() => {
+                modal.classList.remove('opacity-0');
+                modal.classList.add('opacity-100');
+                card.classList.remove('scale-90');
+                card.classList.add('scale-100');
+            });
+
+            if (window.lucide) window.lucide.createIcons();
+            launchRsvpConfetti();
+        }
+
+        function closeRsvpCongratsModal() {
+            const modal = document.getElementById('rsvp-congrats-modal');
+            const card = document.getElementById('rsvp-congrats-card');
+            if (!modal || !card) return;
+
+            modal.classList.remove('opacity-100');
+            modal.classList.add('opacity-0');
+            card.classList.remove('scale-100');
+            card.classList.add('scale-90');
+
+            setTimeout(() => {
+                modal.classList.remove('flex');
+                modal.classList.add('hidden');
+            }, 280);
+        }
+
+        // Close modal on backdrop click or Escape key
+        window.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('rsvp-congrats-modal');
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) closeRsvpCongratsModal();
+                });
+            }
+            window.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') closeRsvpCongratsModal();
+            });
+        });
+
+        // Route from the user's current location to the exact destination (5 Đ. Nguyễn Tất Thành / Saigon Port)
+        function openDirectionsFromCurrentLocation(event) {
+            if (event) event.preventDefault();
+
+            const destinationAddress = encodeURIComponent('5 Đ. Nguyễn Tất Thành, Xóm Chiếu, Hồ Chí Minh 700000');
+            const destinationPlaceId = 'ChIJ9cFI-2kvdTERU_PQ_r-Ov4A';
+            // Default Google Maps Directions URL (when origin is omitted, Google Maps defaults to user's Current Location)
+            const fallbackDirectionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${destinationAddress}&destination_place_id=${destinationPlaceId}&travelmode=driving`;
+
+            // Open the tab synchronously on click so browser pop-up blockers never block it
+            const mapWindow = window.open(fallbackDirectionsUrl, '_blank', 'noopener,noreferrer');
+
+            // Also attempt high-accuracy browser geolocation to lock in exact GPS origin coordinates if permitted
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        const lat = position.coords.latitude;
+                        const lng = position.coords.longitude;
+                        const preciseDirectionsUrl = `https://www.google.com/maps/dir/?api=1&origin=${lat},${lng}&destination=${destinationAddress}&destination_place_id=${destinationPlaceId}&travelmode=driving`;
+                        if (mapWindow && !mapWindow.closed) {
+                            mapWindow.location.href = preciseDirectionsUrl;
+                        }
+                    },
+                    () => {
+                        // Fallback URL is already loaded in mapWindow and uses Google Maps' built-in Current Location
+                    },
+                    { timeout: 3500, maximumAge: 60000 }
+                );
+            }
+        }
+
+        // Helper to try alternate uploaded filenames without overriding with colored placeholder boxes
+        function tryNextFallback(imgEl) {
+            try {
+                const list = JSON.parse(imgEl.getAttribute('data-fallbacks') || '[]');
+                const idx = parseInt(imgEl.getAttribute('data-fb-idx') || '0', 10);
+                if (idx < list.length) {
+                    imgEl.setAttribute('data-fb-idx', String(idx + 1));
+                    imgEl.src = list[idx];
+                }
+            } catch (e) {}
+        }
+
+        // Smooth scroll & visual spotlight for Captain Vote CTA button
+        function scrollToCaptainPoll() {
+            const pollSection = document.getElementById('captain-poll-section');
+            const pollCard = document.getElementById('captain-poll-card');
+            if (!pollSection || !pollCard) return;
+
+            pollSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            pollCard.classList.add('ring-4', 'ring-google-yellow/60', 'scale-[1.01]');
+            setTimeout(() => {
+                pollCard.classList.remove('ring-4', 'ring-google-yellow/60', 'scale-[1.01]');
+            }, 1500);
+        }
+
+        // Guaranteed Autoplay & Infinite Loop Engine for Google Sites Embeds
+        window.addEventListener('DOMContentLoaded', () => {
+            const nativeVid = document.getElementById('venue-native-video');
+            const fwCanvas = document.getElementById('venue-live-fireworks-canvas');
+            const posterImg = document.getElementById('venue-video-poster');
+
+            // 1. Start Live Fireworks & Shimmering River Reflection Animation on Top of the High-Res Cruise Frame
+            //    This guarantees continuous, zero-buffering motion inside Google Sites' sandboxed iframe immediately
+            let stopCanvasLoop = false;
+            if (fwCanvas) {
+                const ctx = fwCanvas.getContext('2d');
+                let W = (fwCanvas.width = 800);
+                let H = (fwCanvas.height = 600);
+                const sparks = [];
+                const palette = ['#FFD54F', '#FF7043', '#FFCA28', '#FF5252', '#26A69A', '#FFF8E1'];
+
+                function spawnBurst() {
+                    // Position bursts right above the Rever Cruise upper deck where the real fireworks launch
+                    const cx = W * (0.58 + Math.random() * 0.16);
+                    const cy = H * (0.18 + Math.random() * 0.18);
+                    const color = palette[Math.floor(Math.random() * palette.length)];
+                    const count = 36 + Math.floor(Math.random() * 24);
+                    for (let i = 0; i < count; i++) {
+                        const angle = (Math.PI * 2 * i) / count + (Math.random() - 0.5) * 0.2;
+                        const speed = 0.8 + Math.random() * 2.8;
+                        sparks.push({
+                            x: cx,
+                            y: cy,
+                            vx: Math.cos(angle) * speed,
+                            vy: Math.sin(angle) * speed - 0.4,
+                            alpha: 1,
+                            decay: 0.012 + Math.random() * 0.01,
+                            color,
+                            size: 1.5 + Math.random() * 1.8
+                        });
+                    }
+                }
+
+                spawnBurst();
+                const burstTimer = setInterval(() => {
+                    if (!stopCanvasLoop && !document.hidden) spawnBurst();
+                }, 1350);
+
+                function animateVenueCanvas() {
+                    if (stopCanvasLoop) {
+                        clearInterval(burstTimer);
+                        return;
+                    }
+                    ctx.clearRect(0, 0, W, H);
+
+                    for (let i = sparks.length - 1; i >= 0; i--) {
+                        const p = sparks[i];
+                        p.x += p.vx;
+                        p.y += p.vy;
+                        p.vy += 0.035; // gentle gravity
+                        p.vx *= 0.985;
+                        p.alpha -= p.decay;
+
+                        if (p.alpha <= 0) {
+                            sparks.splice(i, 1);
+                            continue;
+                        }
+
+                        ctx.save();
+                        ctx.globalAlpha = Math.max(0, p.alpha);
+                        ctx.fillStyle = p.color;
+                        ctx.shadowColor = p.color;
+                        ctx.shadowBlur = 8;
+                        ctx.beginPath();
+                        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                        ctx.fill();
+
+                        // Subtle water reflection shimmer below the yacht
+                        ctx.globalAlpha = Math.max(0, p.alpha * 0.22);
+                        ctx.beginPath();
+                        ctx.ellipse(p.x, H * 0.82 + (H * 0.35 - p.y) * 0.25, p.size * 2.4, p.size * 0.6, 0, 0, Math.PI * 2);
+                        ctx.fill();
+                        ctx.restore();
+                    }
+                    requestAnimationFrame(animateVenueCanvas);
+                }
+                requestAnimationFrame(animateVenueCanvas);
+            }
+
+            // 2. Attempt Direct MP4 Stream Waterfall for Native <video> Autoplay & Infinite Loop
+            if (nativeVid) {
+                const videoSources = [
+                    'https://drive.usercontent.google.com/download?id=13NrP4c-U0kIgBfMuqT8V1suHf-jlfJor&export=download&confirm=t',
+                    'https://lh3.googleusercontent.com/d/13NrP4c-U0kIgBfMuqT8V1suHf-jlfJor=m22',
+                    'https://lh3.googleusercontent.com/d/13NrP4c-U0kIgBfMuqT8V1suHf-jlfJor=m18',
+                    'https://drive.google.com/uc?export=download&id=13NrP4c-U0kIgBfMuqT8V1suHf-jlfJor',
+                    'FLYCAM_REVER_07_2.mp4',
+                    'FLYCAM_REVER_07.mp4'
+                ];
+                let sourceIdx = 0;
+                let isNativePlaying = false;
+
+                nativeVid.muted = true;
+                nativeVid.defaultMuted = true;
+                nativeVid.loop = true;
+                nativeVid.playsInline = true;
+                nativeVid.setAttribute('muted', '');
+                nativeVid.setAttribute('playsinline', '');
+                nativeVid.setAttribute('autoplay', '');
+                nativeVid.setAttribute('loop', '');
+
+                function tryNextVideoSource() {
+                    if (isNativePlaying || sourceIdx >= videoSources.length) return;
+                    nativeVid.src = videoSources[sourceIdx++];
+                    nativeVid.load();
+                    const p = nativeVid.play();
+                    if (p !== undefined) {
+                        p.then(() => {
+                            isNativePlaying = true;
+                            stopCanvasLoop = true;
+                            nativeVid.classList.remove('opacity-0');
+                            nativeVid.classList.add('opacity-100');
+                            if (fwCanvas) fwCanvas.classList.add('opacity-0');
+                        }).catch(() => {
+                            setTimeout(tryNextVideoSource, 700);
+                        });
+                    }
+                }
+
+                nativeVid.addEventListener('error', () => {
+                    if (!isNativePlaying) setTimeout(tryNextVideoSource, 400);
+                });
+
+                nativeVid.addEventListener('ended', () => {
+                    nativeVid.currentTime = 0;
+                    nativeVid.play().catch(() => {});
+                });
+
+                nativeVid.addEventListener('timeupdate', () => {
+                    if (nativeVid.duration && nativeVid.currentTime >= nativeVid.duration - 0.3) {
+                        nativeVid.currentTime = 0;
+                        nativeVid.play().catch(() => {});
+                    }
+                });
+
+                tryNextVideoSource();
+            }
+
+            // Live Fiesta Countdown Timer (Dec 11, 2026 18:00:00 GMT+7)
+            const partyTarget = new Date('2026-12-11T18:00:00+07:00').getTime();
+            const pollTarget = new Date('2026-11-23T17:00:00+07:00').getTime();
+            const cdDays = document.getElementById('cd-days');
+            const cdHours = document.getElementById('cd-hours');
+            const cdMins = document.getElementById('cd-minutes');
+            const pollDays = document.getElementById('poll-cd-days');
+            const pollHours = document.getElementById('poll-cd-hours');
+            const pollMins = document.getElementById('poll-cd-minutes');
+
+            function updateCountdowns() {
+                const now = Date.now();
+                const diff = Math.max(0, partyTarget - now);
+                const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+                const m = Math.floor((diff / (1000 * 60)) % 60);
+                if (cdDays) cdDays.textContent = String(d).padStart(2, '0');
+                if (cdHours) cdHours.textContent = String(h).padStart(2, '0');
+                if (cdMins) cdMins.textContent = String(m).padStart(2, '0');
+
+                const pDiff = Math.max(0, pollTarget - now);
+                const pd = Math.floor(pDiff / (1000 * 60 * 60 * 24));
+                const ph = Math.floor((pDiff / (1000 * 60 * 60)) % 24);
+                const pm = Math.floor((pDiff / (1000 * 60)) % 60);
+                if (pollDays) pollDays.textContent = String(pd).padStart(2, '0');
+                if (pollHours) pollHours.textContent = String(ph).padStart(2, '0');
+                if (pollMins) pollMins.textContent = String(pm).padStart(2, '0');
+            }
+            updateCountdowns();
+            setInterval(updateCountdowns, 15000);
+        });
+    </script>
+
+    <!-- Interactive Logic (Countdown, Shared Multi-User Cloud Captain Poll, Navigation) -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, doc, setDoc, updateDoc, onSnapshot, collection } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // Initialize Lucide Icons
+        if (window.lucide) {
+            window.lucide.createIcons();
+        }
+
+        // Shared state & utility definitions
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'google-yep-2026-havana';
+        // Direct Firebase Realtime Database URL provided by user:
+        const FIREBASE_RTDB_BASE_URL = 'https://yep2026-default-rtdb.firebaseio.com';
+        const RTDB_POLL_ENDPOINT = `${FIREBASE_RTDB_BASE_URL}/captain_poll.json`;
+        const RTDB_RSVP_ENDPOINT = `${FIREBASE_RTDB_BASE_URL}/party_rsvps.json`;
+
+        const SHARED_CLOUD_POLL_URL = 'https://keyvalue.immanuel.co/api/KeyVal/GetValue/yep2026havana/captain_poll_v1';
+        const SHARED_CLOUD_POLL_WRITE_URL = 'https://keyvalue.immanuel.co/api/KeyVal/UpdateValue/yep2026havana/captain_poll_v1';
+        // Target Google Sheet ID: 1L3umDvYUsyb1NJKq7BmyDJmVD7ZrWWGqWuFIIkpuALs
+        const TARGET_GOOGLE_SHEET_ID = '1L3umDvYUsyb1NJKq7BmyDJmVD7ZrWWGqWuFIIkpuALs';
+        const TARGET_GOOGLE_SHEET_URL = 'https://docs.google.com/spreadsheets/d/1L3umDvYUsyb1NJKq7BmyDJmVD7ZrWWGqWuFIIkpuALs/edit?gid=0#gid=0';
+        // Dedicated cloud key bound to Sheet 1L3umDvYUsyb1NJKq7BmyDJmVD7ZrWWGqWuFIIkpuALs (uses POST body, matching the working Captain Vote poll)
+        const SHARED_CLOUD_RSVP_GET_URL = 'https://keyvalue.immanuel.co/api/KeyVal/GetValue/yep2026havana/sheet_1L3umDvYUsyb1NJK_v2';
+        const SHARED_CLOUD_RSVP_POST_URL = 'https://keyvalue.immanuel.co/api/KeyVal/GetValue/yep2026havana/sheet_1L3umDvYUsyb1NJK_v2';
+        // Optional Apps Script Web App URL for direct instant row insertion into Sheet 1L3umDvYUsyb1NJKq7BmyDJmVD7ZrWWGqWuFIIkpuALs:
+        const GOOGLE_SHEETS_WEBHOOK_URL = '';
+        const LOCAL_POLL_CACHE_KEY = 'yep_2026_captain_poll_cache_v1';
+        const LOCAL_RSVP_CACHE_KEY = 'yep_2026_party_rsvps_cache_v1';
+        const LOCAL_VOTER_ID_KEY = 'yep_2026_persistent_voter_id_v1';
+
+        let db = null;
+        let currentUser = null;
+        let currentUserId = null;
+        let useFirestore = false;
+        let candidates = [];
+        let isWritingCloud = false;
+
+        function escapeHTML(str) {
+            const div = document.createElement('div');
+            div.textContent = str || '';
+            return div.innerHTML;
+        }
+
+        function getOrCreatePersistentVoterId() {
+            try {
+                let uid = localStorage.getItem(LOCAL_VOTER_ID_KEY);
+                if (!uid) {
+                    uid = 'googler_' + Math.random().toString(36).substring(2, 10);
+                    localStorage.setItem(LOCAL_VOTER_ID_KEY, uid);
+                }
+                return uid;
+            } catch (e) {
+                return 'googler_' + Math.random().toString(36).substring(2, 10);
+            }
+        }
+
+        function readLocalPollCache() {
+            try {
+                const raw = localStorage.getItem(LOCAL_POLL_CACHE_KEY);
+                if (!raw) return [];
+                const parsed = JSON.parse(raw);
+                return Array.isArray(parsed) ? parsed : [];
+            } catch (e) {
+                return [];
+            }
+        }
+
+        function writeLocalPollCache(list) {
+            try {
+                localStorage.setItem(LOCAL_POLL_CACHE_KEY, JSON.stringify(list || []));
+            } catch (e) {}
+        }
+
+        // =========================================================================
+        // 1B. OFFICIAL PARTY RSVP FORM ("I'm In For The Party") & CLOUD GUEST LIST
+        // =========================================================================
+        const rsvpForm = document.getElementById('party-rsvp-form');
+        const rsvpInput = document.getElementById('party-rsvp-email');
+        const rsvpBtn = document.getElementById('im-in-party-btn');
+        const rsvpStatusEl = document.getElementById('rsvp-inline-status');
+        const rsvpCountBadge = document.getElementById('rsvp-count-badge');
+        const modalRsvpTotal = document.getElementById('modal-rsvp-total');
+        const rsvpTableBody = document.getElementById('rsvp-table-body');
+        const rsvpModalToast = document.getElementById('rsvp-modal-toast');
+
+        let rsvpMap = new Map(); // ldap -> { ldap, email, confirmedAt }
+
+        function readLocalRsvpCache() {
+            try {
+                const raw = localStorage.getItem(LOCAL_RSVP_CACHE_KEY);
+                if (!raw) return [];
+                const parsed = JSON.parse(raw);
+                return Array.isArray(parsed) ? parsed : [];
+            } catch (e) {
+                return [];
+            }
+        }
+
+        function writeLocalRsvpCache() {
+            try {
+                localStorage.setItem(LOCAL_RSVP_CACHE_KEY, JSON.stringify(Array.from(rsvpMap.values())));
+            } catch (e) {}
+        }
+
+        function mergeRsvpEntries(list) {
+            if (!Array.isArray(list)) return;
+            list.forEach((item) => {
+                if (!item || !item.ldap) return;
+                const cleanLdap = String(item.ldap).trim().toLowerCase();
+                if (!cleanLdap) return;
+                const existing = rsvpMap.get(cleanLdap);
+                if (!existing || (item.confirmedAt && item.confirmedAt < existing.confirmedAt)) {
+                    rsvpMap.set(cleanLdap, {
+                        ldap: cleanLdap,
+                        email: item.email || `${cleanLdap}@google.com`,
+                        confirmedAt: Number(item.confirmedAt) || Date.now()
+                    });
+                }
+            });
+            writeLocalRsvpCache();
+            renderRsvpDirectory();
+        }
+
+        function getSortedRsvps() {
+            return Array.from(rsvpMap.values()).sort((a, b) => (a.confirmedAt || 0) - (b.confirmedAt || 0));
+        }
+
+        function formatHcmTimestamp(ms) {
+            const d = new Date(Number(ms) || Date.now());
+            return d.toLocaleString('en-US', {
+                timeZone: 'Asia/Ho_Chi_Minh',
+                year: 'numeric',
+                month: 'short',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true
+            }) + ' (GMT+7)';
+        }
+
+        // Encode RSVPs into a URL-path-safe string: "ldap1~timestamp1|ldap2~timestamp2"
+        // (Avoids curly braces, quotes, and colons which cause 400/404 errors on KeyVal URL path endpoints and break IMPORTDATA)
+        function serializeRsvpsForCloud(list) {
+            if (!Array.isArray(list) || list.length === 0) return 'EMPTY';
+            return list
+                .map((item) => {
+                    const cleanLdap = String(item.ldap || '').trim().toLowerCase().replace(/[^a-z0-9._-]/g, '');
+                    const ts = Number(item.confirmedAt) || Date.now();
+                    return cleanLdap ? `${cleanLdap}~${ts}` : '';
+                })
+                .filter(Boolean)
+                .join('|');
+        }
+
+        function deserializeRsvpsFromCloud(rawString) {
+            if (!rawString) return [];
+            const cleaned = String(rawString).trim().replace(/^"|"$/g, '').replace(/\\"/g, '"');
+            if (!cleaned || cleaned === 'null' || cleaned === 'EMPTY') return [];
+
+            // Support legacy JSON if present
+            if (cleaned.startsWith('[')) {
+                try {
+                    return JSON.parse(cleaned);
+                } catch (e) {}
+            }
+
+            return cleaned
+                .split('|')
+                .map((token) => {
+                    const parts = token.split('~');
+                    const ldap = (parts[0] || '').trim().toLowerCase();
+                    if (!ldap) return null;
+                    const confirmedAt = Number(parts[1]) || Date.now();
+                    return {
+                        ldap,
+                        email: `${ldap}@google.com`,
+                        confirmedAt
+                    };
+                })
+                .filter(Boolean);
+        }
+
+        function renderRsvpDirectory() {
+            const list = getSortedRsvps();
+            if (rsvpCountBadge) rsvpCountBadge.textContent = String(list.length);
+            if (modalRsvpTotal) modalRsvpTotal.textContent = String(list.length);
+            if (!rsvpTableBody) return;
+
+            if (list.length === 0) {
+                rsvpTableBody.innerHTML = `
+                    <tr>
+                        <td colspan="4" class="py-8 text-center text-amber-200/60">
+                            No RSVPs yet. Enter an LDAP in the "I'm In For The Party" box to test!
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+
+            rsvpTableBody.innerHTML = list.map((entry, idx) => {
+                const dt = new Date(entry.confirmedAt || Date.now());
+                const formattedDate = dt.toLocaleString('en-US', {
+                    month: 'short',
+                    day: '2-digit',
+                    year: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+                return `
+                    <tr class="hover:bg-white/5 transition-colors">
+                        <td class="py-2.5 px-4 font-mono text-amber-200/70">${idx + 1}</td>
+                        <td class="py-2.5 px-4 font-bold text-google-yellow">${escapeHTML(entry.ldap)}</td>
+                        <td class="py-2.5 px-4 text-amber-100">${escapeHTML(entry.email)}</td>
+                        <td class="py-2.5 px-4 text-xs text-amber-200/70">${escapeHTML(formattedDate)}</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        async function syncRsvpsFromCloud() {
+            try {
+                // 1. Pull from Firebase Realtime Database (yep2026-default-rtdb)
+                const rtdbRes = await fetch(`${RTDB_RSVP_ENDPOINT}?_t=${Date.now()}`, {
+                    method: 'GET',
+                    cache: 'no-store'
+                });
+                if (rtdbRes.ok) {
+                    const rtdbData = await rtdbRes.json();
+                    if (rtdbData && typeof rtdbData === 'object') {
+                        const list = Object.values(rtdbData).filter(Boolean);
+                        if (list.length > 0) {
+                            mergeRsvpEntries(list);
+                        }
+                    }
+                }
+            } catch (e) {}
+
+            try {
+                // 2. Pull from backup cloud key-value store
+                const res = await fetch(`${SHARED_CLOUD_RSVP_GET_URL}?_t=${Date.now()}`, {
+                    method: 'GET',
+                    cache: 'no-store'
+                });
+                if (!res.ok) return;
+                const rawText = await res.text();
+                const parsed = deserializeRsvpsFromCloud(rawText);
+                if (parsed.length > 0) {
+                    mergeRsvpEntries(parsed);
+                }
+            } catch (e) {}
+        }
+
+        async function pushRsvpsToCloud(latestEntry = null) {
+            try {
+                await syncRsvpsFromCloud();
+                if (latestEntry) {
+                    mergeRsvpEntries([latestEntry]);
+                }
+
+                // 1. Save to Firebase Realtime Database (yep2026-default-rtdb)
+                if (latestEntry && latestEntry.ldap) {
+                    const safeKey = latestEntry.ldap.replace(/[.#$\[\]\/]/g, '_');
+                    await fetch(`${FIREBASE_RTDB_BASE_URL}/party_rsvps/${safeKey}.json`, {
+                        method: 'PUT',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            ldap: latestEntry.ldap,
+                            email: latestEntry.email || `${latestEntry.ldap}@google.com`,
+                            confirmedAt: latestEntry.confirmedAt || Date.now(),
+                            timestampFormatted: formatHcmTimestamp(latestEntry.confirmedAt)
+                        })
+                    }).catch(() => {});
+                }
+
+                // 2. Write to Firebase Firestore if active
+                if (useFirestore && db && currentUser && latestEntry && latestEntry.ldap) {
+                    try {
+                        const rsvpRef = doc(db, 'artifacts', appId, 'public', 'data', 'party_rsvps', latestEntry.ldap);
+                        await setDoc(rsvpRef, {
+                            ...latestEntry,
+                            userId: currentUser.uid
+                        });
+                    } catch (fireErr) {
+                        console.warn('Firestore RSVP sync fallback:', fireErr);
+                    }
+                }
+
+                const compactStr = serializeRsvpsForCloud(getSortedRsvps());
+
+                // 3. Write to backup KeyVal store
+                await fetch(SHARED_CLOUD_RSVP_POST_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+                    body: compactStr
+                }).catch(() => {});
+
+                // 3. Direct push to Google Sheet 1L3umDvYUsyb1NJKq7BmyDJmVD7ZrWWGqWuFIIkpuALs Web App URL (if configured)
+                const activeWebhook = GOOGLE_SHEETS_WEBHOOK_URL || localStorage.getItem('yep_2026_sheet_webhook_url') || '';
+                if (activeWebhook) {
+                    const sheetPayload = {
+                        sheetId: TARGET_GOOGLE_SHEET_ID,
+                        sheetUrl: TARGET_GOOGLE_SHEET_URL,
+                        action: 'sync_all',
+                        latest: latestEntry ? {
+                            ldap: latestEntry.ldap,
+                            email: latestEntry.email || `${latestEntry.ldap}@google.com`,
+                            confirmedAt: latestEntry.confirmedAt,
+                            timestampFormatted: formatHcmTimestamp(latestEntry.confirmedAt)
+                        } : null,
+                        allRsvps: getSortedRsvps().map((item) => ({
+                            ldap: item.ldap,
+                            email: item.email || `${item.ldap}@google.com`,
+                            confirmedAt: item.confirmedAt,
+                            timestampFormatted: formatHcmTimestamp(item.confirmedAt)
+                        }))
+                    };
+
+                    fetch(activeWebhook, {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+                        body: JSON.stringify(sheetPayload)
+                    }).catch(() => {});
+
+                    // Also send GET query beacon fallback for Google Sites iframe sandboxes
+                    if (latestEntry && latestEntry.ldap) {
+                        const q = new URLSearchParams({
+                            sheetId: TARGET_GOOGLE_SHEET_ID,
+                            ldap: latestEntry.ldap,
+                            email: latestEntry.email || `${latestEntry.ldap}@google.com`,
+                            timestamp: formatHcmTimestamp(latestEntry.confirmedAt)
+                        }).toString();
+                        const beaconImg = new Image();
+                        beaconImg.src = `${activeWebhook}${activeWebhook.includes('?') ? '&' : '?'}${q}`;
+                    }
+                }
+            } catch (e) {}
+        }
+
+        // Expose Google Sheets Copy & CSV Download helpers to global window
+        window.refreshRsvpListNow = syncRsvpsFromCloud;
+
+        window.copyRsvpsForGoogleSheets = function(openedSheet = false) {
+            const list = getSortedRsvps();
+            const rows = [
+                ['#', 'LDAP', 'Google Email', 'Confirmed Timestamp (ISO)'].join('\t'),
+                ...list.map((item, i) => [
+                    i + 1,
+                    item.ldap,
+                    item.email,
+                    new Date(item.confirmedAt || Date.now()).toISOString()
+                ].join('\t'))
+            ].join('\n');
+
+            const ta = document.createElement('textarea');
+            ta.value = rows;
+            ta.style.position = 'fixed';
+            ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            try {
+                document.execCommand('copy');
+            } catch (e) {}
+            document.body.removeChild(ta);
+
+            if (rsvpModalToast) {
+                rsvpModalToast.textContent = openedSheet
+                    ? '✓ Copied! Press Cmd+V (or Ctrl+V) inside cell A1 of the new Google Sheet tab.'
+                    : `✓ Copied ${list.length} attendee(s) in Google Sheets format! Paste directly into any Google Sheet.`;
+                rsvpModalToast.classList.remove('hidden');
+                setTimeout(() => rsvpModalToast.classList.add('hidden'), 6000);
+            }
+        };
+
+        window.downloadRsvpCsv = function() {
+            const list = getSortedRsvps();
+            const csvLines = [
+                'Number,LDAP,Email,Confirmed_Timestamp',
+                ...list.map((item, i) => `${i + 1},"${item.ldap}","${item.email}","${new Date(item.confirmedAt || Date.now()).toISOString()}"`)
+            ].join('\n');
+
+            const blob = new Blob([csvLines], { type: 'text/csv;charset=utf-8;' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `Google_YEP_2026_Havana_RSVPs_${new Date().toISOString().slice(0, 10)}.csv`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        };
+
+        // Hydrate RSVP cache immediately on load
+        mergeRsvpEntries(readLocalRsvpCache());
+        syncRsvpsFromCloud();
+        setInterval(() => {
+            if (!document.hidden) syncRsvpsFromCloud();
+        }, 5000);
+
+        const LOCAL_USER_RSVPED_EMAIL_KEY = 'yep_2026_user_confirmed_rsvp_email_v1';
+
+        function lockRsvpUiAsConfirmed(fullEmail) {
+            if (!rsvpInput || !rsvpBtn) return;
+
+            const ldapOnly = String(fullEmail || '').replace(/@google\.com$/i, '');
+
+            // Grey out and disable the LDAP input box
+            rsvpInput.value = ldapOnly;
+            rsvpInput.disabled = true;
+            rsvpInput.classList.add('opacity-50', 'bg-[#1E1A1B]', 'text-amber-200/50', 'cursor-not-allowed');
+
+            const domainBadge = document.getElementById('rsvp-domain-badge');
+            if (domainBadge) {
+                domainBadge.classList.add('opacity-45');
+            }
+
+            // Permanently set button to "You're In!"
+            rsvpBtn.disabled = true;
+            rsvpBtn.innerHTML = `<i data-lucide="check-circle-2" class="w-5 h-5 text-[#120608]"></i><span>You're In!</span>`;
+            if (window.lucide) window.lucide.createIcons();
+
+            if (rsvpStatusEl) {
+                rsvpStatusEl.innerHTML = `<span class="text-havana-teal font-bold">✓ Spot confirmed for ${escapeHTML(fullEmail)}!</span> See you aboard Rever Mixology Cruise!`;
+                rsvpStatusEl.className = 'text-[11px] text-amber-100 mt-2';
+            }
+        }
+
+        // Clear any previous local RSVP entry so you can test registering again cleanly
+        const LOCAL_RSVP_RESET_TOKEN_KEY = 'yep_2026_rsvp_reset_done_v3';
+        try {
+            if (!localStorage.getItem(LOCAL_RSVP_RESET_TOKEN_KEY)) {
+                localStorage.removeItem(LOCAL_USER_RSVPED_EMAIL_KEY);
+                localStorage.removeItem(LOCAL_RSVP_CACHE_KEY);
+                rsvpMap.clear();
+                localStorage.setItem(LOCAL_RSVP_RESET_TOKEN_KEY, 'true');
+            }
+        } catch (e) {}
+
+        // Restore locked "You're In!" state if this user registers again later
+        try {
+            const previouslyConfirmedEmail = localStorage.getItem(LOCAL_USER_RSVPED_EMAIL_KEY);
+            if (previouslyConfirmedEmail) {
+                const prevLdap = previouslyConfirmedEmail.replace(/@google\.com$/i, '').trim().toLowerCase();
+                if (prevLdap) {
+                    const restoredEntry = {
+                        ldap: prevLdap,
+                        email: `${prevLdap}@google.com`,
+                        confirmedAt: Date.now()
+                    };
+                    mergeRsvpEntries([restoredEntry]);
+                    pushRsvpsToCloud(restoredEntry);
+                }
+                lockRsvpUiAsConfirmed(previouslyConfirmedEmail);
+            }
+        } catch (e) {}
+
+        if (rsvpForm && rsvpInput && rsvpStatusEl) {
+            rsvpForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                if (rsvpInput.disabled) return;
+
+                let rawLdap = rsvpInput.value.trim().toLowerCase();
+                if (!rawLdap) return;
+
+                // Strip @google.com if user typed the full email
+                rawLdap = rawLdap.replace(/@google\.com$/i, '').replace(/[^a-z0-9._-]/gi, '');
+                if (!rawLdap) {
+                    rsvpStatusEl.textContent = 'Please enter a valid LDAP username.';
+                    rsvpStatusEl.className = 'text-[11px] font-semibold text-google-red mt-2';
+                    return;
+                }
+
+                const fullEmail = `${rawLdap}@google.com`;
+                const entry = {
+                    ldap: rawLdap,
+                    email: fullEmail,
+                    confirmedAt: Date.now()
+                };
+                mergeRsvpEntries([entry]);
+                pushRsvpsToCloud(entry);
+
+                try {
+                    localStorage.setItem(LOCAL_USER_RSVPED_EMAIL_KEY, fullEmail);
+                } catch (err) {}
+
+                // Lock input box as greyed-out, change button to "You're In!", and launch congratulation popup animation
+                lockRsvpUiAsConfirmed(fullEmail);
+                openRsvpCongratsModal(fullEmail);
+
+                // Persist to Firestore if active
+                if (useFirestore && db && currentUser) {
+                    try {
+                        const rsvpRef = doc(db, 'artifacts', appId, 'public', 'data', 'party_rsvps', rawLdap);
+                        await setDoc(rsvpRef, {
+                            ...entry,
+                            userId: currentUser.uid
+                        });
+                    } catch (err) {
+                        console.warn('RSVP cloud save fallback:', err);
+                    }
+                }
+            });
+        }
+
+        // =========================================================================
+        // 2. SHARED MULTI-USER CAPTAIN VOTE POLL (Firestore + Conflict-Free Cloud)
+        // =========================================================================
+        const googleColors = ['#4285F4', '#EA4335', '#FBBC04', '#34A853'];
+
+        const pollContainer = document.getElementById('poll-options-container');
+        const totalVotesBadge = document.getElementById('total-votes-badge');
+        const addForm = document.getElementById('add-candidate-form');
+        const candidateInput = document.getElementById('new-candidate-input');
+        const feedbackEl = document.getElementById('poll-feedback');
+        const voterIdDisplay = document.getElementById('voter-id-display');
+        const syncStatusEl = document.getElementById('poll-sync-status');
+        const lastSyncedLabel = document.getElementById('last-synced-label');
+        const manualSyncBtn = document.getElementById('manual-sync-btn');
+        const pollManualRefreshBtn = document.getElementById('poll-manual-refresh-btn');
+
+        function normalizeCandidate(item) {
+            if (!item || typeof item !== 'object') return null;
+            const id = String(item.id || ('captain_' + Date.now()));
+            const name = String(item.name || 'Candidate').trim();
+            const voters = Array.isArray(item.voters) ? item.voters.map(String) : [];
+            return {
+                id,
+                name,
+                voters,
+                votes: voters.length,
+                createdAt: Number(item.createdAt) || Date.now()
+            };
+        }
+
+        function mergeCandidateLists(remoteList = [], localList = [], overrideCandidateId = null, overrideVotedState = null) {
+            const mergedMap = new Map();
+
+            (Array.isArray(remoteList) ? remoteList : []).forEach((item) => {
+                const norm = normalizeCandidate(item);
+                if (norm) mergedMap.set(norm.id, norm);
+            });
+
+            (Array.isArray(localList) ? localList : []).forEach((item) => {
+                const norm = normalizeCandidate(item);
+                if (!norm) return;
+                let existing = mergedMap.get(norm.id);
+                if (!existing) {
+                    existing = Array.from(mergedMap.values()).find(
+                        (c) => c.name.toLowerCase() === norm.name.toLowerCase()
+                    );
+                }
+
+                if (existing) {
+                    const unionVoters = new Set([...existing.voters, ...norm.voters]);
+                    // If currentUserId removed their vote locally on this item, don't re-add from stale cache
+                    if (currentUserId && existing.id !== overrideCandidateId) {
+                        const inRemote = existing.voters.includes(currentUserId);
+                        const inLocal = norm.voters.includes(currentUserId);
+                        if (inRemote || inLocal) {
+                            unionVoters.add(currentUserId);
+                        }
+                    }
+                    existing.voters = Array.from(unionVoters);
+                    existing.votes = existing.voters.length;
+                    existing.createdAt = Math.min(existing.createdAt, norm.createdAt);
+                } else {
+                    mergedMap.set(norm.id, norm);
+                }
+            });
+
+            // Apply explicit local toggle override for the active user so un-voting is never overwritten
+            if (overrideCandidateId && currentUserId && mergedMap.has(overrideCandidateId)) {
+                const target = mergedMap.get(overrideCandidateId);
+                const voterSet = new Set(target.voters);
+                if (overrideVotedState === true) {
+                    voterSet.add(currentUserId);
+                } else if (overrideVotedState === false) {
+                    voterSet.delete(currentUserId);
+                }
+                target.voters = Array.from(voterSet);
+                target.votes = target.voters.length;
+            }
+
+            return Array.from(mergedMap.values());
+        }
+
+        function showFeedback(msg, isError = false) {
+            if (!feedbackEl) return;
+            feedbackEl.textContent = msg;
+            feedbackEl.className = `text-xs font-semibold mt-2 ${isError ? 'text-google-red' : 'text-google-green'}`;
+            feedbackEl.classList.remove('hidden');
+            setTimeout(() => {
+                feedbackEl.classList.add('hidden');
+            }, 4000);
+        }
+
+        function updateSyncTimestamp(statusText = null) {
+            if (!lastSyncedLabel) return;
+            if (statusText) {
+                lastSyncedLabel.textContent = statusText;
+                return;
+            }
+            const now = new Date();
+            const hh = String(now.getHours()).padStart(2, '0');
+            const mm = String(now.getMinutes()).padStart(2, '0');
+            const ss = String(now.getSeconds()).padStart(2, '0');
+            lastSyncedLabel.textContent = `Synced ${hh}:${mm}:${ss}`;
+        }
+
+        function renderPoll() {
+            if (!pollContainer || !totalVotesBadge) return;
+
+            // Sort candidates by vote count descending, then by creation timestamp
+            const sorted = [...candidates].sort((a, b) => {
+                const votesA = Array.isArray(a.voters) ? a.voters.length : (a.votes || 0);
+                const votesB = Array.isArray(b.voters) ? b.voters.length : (b.votes || 0);
+                if (votesB !== votesA) return votesB - votesA;
+                return (a.createdAt || 0) - (b.createdAt || 0);
+            });
+
+            const totalVotes = sorted.reduce((sum, item) => {
+                const count = Array.isArray(item.voters) ? item.voters.length : (item.votes || 0);
+                return sum + count;
+            }, 0);
+
+            totalVotesBadge.textContent = `${totalVotes} ${totalVotes === 1 ? 'vote' : 'votes'}`;
+            pollContainer.innerHTML = '';
+
+            if (sorted.length === 0) {
+                pollContainer.innerHTML = `
+                    <div class="text-center py-7 px-4 rounded-2xl border border-dashed border-google-yellow/25 bg-[#16080B]/60">
+                        <p class="text-sm font-bold text-amber-100">No captains nominated yet!</p>
+                        <p class="text-xs text-amber-200/70 mt-1">Type a Googler's name below and click "Add Option" to start the poll.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            sorted.forEach((candidate, index) => {
+                const votersList = Array.isArray(candidate.voters) ? candidate.voters : [];
+                const voteCount = votersList.length > 0 ? votersList.length : (candidate.votes || 0);
+                const percentage = totalVotes > 0 ? Math.round((voteCount / totalVotes) * 100) : 0;
+                const isVoted = currentUserId && votersList.includes(currentUserId);
+                const accentColor = googleColors[index % googleColors.length];
+
+                const rowEl = document.createElement('div');
+                rowEl.className = `w-full text-left relative rounded-2xl p-3.5 border transition-all overflow-hidden group ${
+                    isVoted 
+                        ? 'border-google-yellow bg-google-yellow/15 shadow-[0_0_18px_rgba(251,188,4,0.2)]' 
+                        : 'border-white/15 bg-[#16080B]/80 hover:border-google-yellow/40'
+                }`;
+
+                rowEl.innerHTML = `
+                    <!-- Animated Progress Bar Fill -->
+                    <div 
+                        class="absolute inset-y-0 left-0 transition-all duration-500 ease-out opacity-25 pointer-events-none"
+                        style="width: ${percentage}%; background-color: ${accentColor};"
+                    ></div>
+
+                    <div class="relative z-10 flex items-center justify-between gap-3">
+                        <div class="flex items-center gap-3 min-w-0 flex-1">
+                            <span class="w-6 h-6 rounded-full flex items-center justify-center text-xs font-extrabold shrink-0" style="background-color: ${accentColor}22; color: ${accentColor}; border: 1px solid ${accentColor}66;">
+                                #${index + 1}
+                            </span>
+                            <div class="min-w-0 flex-1">
+                                <div class="flex items-center gap-2 flex-wrap">
+                                    <span class="font-bold text-sm sm:text-base text-amber-50 truncate">
+                                        ${escapeHTML(candidate.name)}
+                                    </span>
+                                    ${index === 0 && voteCount > 0 ? '<span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-google-yellow text-[#1A0B0E] shrink-0">Top Leader</span>' : ''}
+                                </div>
+                                <div class="flex items-center gap-2 text-xs text-amber-200/75 mt-0.5">
+                                    <span class="font-extrabold text-amber-50">${voteCount}</span> ${voteCount === 1 ? 'vote' : 'votes'}
+                                    <span>•</span>
+                                    <span class="font-semibold text-google-yellow">${percentage}%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button 
+                            type="button"
+                            data-candidate-id="${escapeHTML(candidate.id)}"
+                            class="vote-option-btn inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-extrabold transition-all shrink-0 cursor-pointer ${
+                                isVoted
+                                    ? 'bg-google-yellow text-[#1A0B0E] shadow-md shadow-google-yellow/25 hover:brightness-110'
+                                    : 'bg-white/10 hover:bg-google-yellow hover:text-[#1A0B0E] text-amber-50 border border-google-yellow/35'
+                            }"
+                        >
+                            <i data-lucide="${isVoted ? 'check-circle-2' : 'thumbs-up'}" class="w-3.5 h-3.5"></i>
+                            <span>${isVoted ? 'Voted' : '+ Vote'}</span>
+                        </button>
+                    </div>
+                `;
+
+                const voteBtn = rowEl.querySelector('.vote-option-btn');
+                if (voteBtn) {
+                    voteBtn.addEventListener('click', () => toggleVote(candidate.id));
+                }
+
+                pollContainer.appendChild(rowEl);
+            });
+
+            if (window.lucide) {
+                window.lucide.createIcons();
+            }
+        }
+
+        // Shared Cloud Sync Adapter (supports real-time multi-user reads & atomic merged writes via Firebase RTDB)
+        async function fetchRawRemoteCandidates() {
+            // Primary: Firebase Realtime Database (yep2026-default-rtdb)
+            try {
+                const rtdbRes = await fetch(`${RTDB_POLL_ENDPOINT}?_t=${Date.now()}`, {
+                    method: 'GET',
+                    cache: 'no-store'
+                });
+                if (rtdbRes.ok) {
+                    const rtdbData = await rtdbRes.json();
+                    if (!rtdbData) return [];
+                    if (Array.isArray(rtdbData)) return rtdbData.filter(Boolean);
+                    if (rtdbData && Array.isArray(rtdbData.candidates)) return rtdbData.candidates.filter(Boolean);
+                    if (typeof rtdbData === 'object') {
+                        return Object.values(rtdbData).filter((item) => item && typeof item === 'object' && item.name);
+                    }
+                }
+            } catch (e) {}
+
+            // Fallback: KeyVal mirror
+            const res = await fetch(`${SHARED_CLOUD_POLL_URL}?_t=${Date.now()}`, {
+                method: 'GET',
+                cache: 'no-store'
+            });
+            if (!res.ok) {
+                if (res.status === 404) return [];
+                throw new Error(`HTTP ${res.status}`);
+            }
+            const text = await res.text();
+            if (!text || !text.trim()) return [];
+            const data = JSON.parse(text);
+            if (Array.isArray(data)) return data;
+            if (data && Array.isArray(data.candidates)) return data.candidates;
+            return [];
+        }
+
+        async function syncFromSharedCloud(showManualToast = false) {
+            if (isWritingCloud) return;
+            try {
+                const remoteList = await fetchRawRemoteCandidates();
+                const merged = mergeCandidateLists(remoteList, candidates);
+                candidates = merged;
+                writeLocalPollCache(candidates);
+                renderPoll();
+                updateSyncTimestamp();
+
+                // If local cache had items not yet pushed to remote, push merged list back
+                if (merged.length > remoteList.length) {
+                    await pushMergedToSharedCloud();
+                }
+                if (showManualToast) {
+                    showFeedback('Live poll synced with all Googlers!');
+                }
+            } catch (err) {
+                updateSyncTimestamp('Offline cache active');
+            }
+        }
+
+        async function pushMergedToSharedCloud(overrideCandidateId = null, overrideVotedState = null) {
+            isWritingCloud = true;
+            try {
+                // 1. Always fetch the very latest remote state right before writing
+                //    so simultaneous votes/additions from other users are never overwritten!
+                let latestRemote = [];
+                try {
+                    latestRemote = await fetchRawRemoteCandidates();
+                } catch (e) {
+                    latestRemote = [];
+                }
+
+                const merged = mergeCandidateLists(
+                    latestRemote,
+                    candidates,
+                    overrideCandidateId,
+                    overrideVotedState
+                );
+
+                candidates = merged;
+                writeLocalPollCache(candidates);
+                renderPoll();
+
+                // 2. Persist the merged state to Firebase Realtime Database (yep2026-default-rtdb)
+                const rtdbMap = {};
+                merged.forEach((item) => {
+                    if (item && item.id) {
+                        rtdbMap[item.id] = item;
+                    }
+                });
+
+                const rtdbWriteRes = await fetch(RTDB_POLL_ENDPOINT, {
+                    method: 'PUT',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(rtdbMap)
+                });
+
+                // Mirror to KeyVal backup asynchronously
+                const payload = JSON.stringify({
+                    candidates: merged,
+                    updatedAt: Date.now()
+                });
+                fetch(SHARED_CLOUD_POLL_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+                    body: payload
+                }).catch(() => {});
+
+                if (!rtdbWriteRes.ok) {
+                    throw new Error(`Firebase RTDB write failed: ${rtdbWriteRes.status}`);
+                }
+
+                updateSyncTimestamp();
+                return true;
+            } catch (err) {
+                console.warn('Cloud write warning:', err);
+                updateSyncTimestamp('Saved locally • check Firebase Rules');
+                return false;
+            } finally {
+                isWritingCloud = false;
+            }
+        }
+
+        async function toggleVote(candidateId) {
+            if (!currentUserId) {
+                currentUserId = getOrCreatePersistentVoterId();
+            }
+
+            const candidate = candidates.find(c => c.id === candidateId);
+            if (!candidate) return;
+
+            const currentVoters = Array.isArray(candidate.voters) ? [...candidate.voters] : [];
+            const hasVoted = currentVoters.includes(currentUserId);
+            const nextVotedState = !hasVoted;
+
+            let updatedVoters;
+            if (hasVoted) {
+                updatedVoters = currentVoters.filter(uid => uid !== currentUserId);
+            } else {
+                updatedVoters = [...currentVoters, currentUserId];
+            }
+
+            // Immediate optimistic UI + localStorage persistence
+            candidate.voters = updatedVoters;
+            candidate.votes = updatedVoters.length;
+            writeLocalPollCache(candidates);
+            renderPoll();
+
+            if (useFirestore && db && currentUser) {
+                try {
+                    const candidateRef = doc(db, 'artifacts', appId, 'public', 'data', 'captain_candidates', candidateId);
+                    await updateDoc(candidateRef, {
+                        voters: updatedVoters,
+                        votes: updatedVoters.length
+                    });
+                    updateSyncTimestamp();
+                    showFeedback(hasVoted ? `Removed your vote for ${candidate.name}.` : `Voted for ${candidate.name}!`);
+                } catch (err) {
+                    showFeedback('Could not sync vote. Please try again.', true);
+                }
+            } else {
+                showFeedback(hasVoted ? `Removed your vote for ${candidate.name}.` : `Voted for ${candidate.name}!`);
+                await pushMergedToSharedCloud(candidateId, nextVotedState);
+            }
+        }
+
+        if (addForm) {
+            addForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const rawName = candidateInput.value.trim();
+                if (!rawName) return;
+
+                if (!currentUserId) {
+                    currentUserId = getOrCreatePersistentVoterId();
+                }
+
+                // Check duplicate (case-insensitive)
+                const existing = candidates.find(c => c.name.toLowerCase() === rawName.toLowerCase());
+                if (existing) {
+                    showFeedback(`"${existing.name}" is already in the poll! Click the "+ Vote" button next to their name.`, true);
+                    return;
+                }
+
+                const newId = 'captain_' + Date.now() + '_' + Math.random().toString(36).substring(2, 7);
+                const newCandidate = {
+                    id: newId,
+                    name: rawName,
+                    voters: [currentUserId],
+                    votes: 1,
+                    createdAt: Date.now(),
+                    createdBy: currentUserId
+                };
+
+                candidateInput.value = '';
+
+                // Optimistic UI update + localStorage cache so it appears immediately with your vote cast
+                candidates.push(newCandidate);
+                writeLocalPollCache(candidates);
+                renderPoll();
+
+                if (useFirestore && db && currentUser) {
+                    try {
+                        const candidateRef = doc(db, 'artifacts', appId, 'public', 'data', 'captain_candidates', newId);
+                        await setDoc(candidateRef, newCandidate);
+                        updateSyncTimestamp();
+                        showFeedback(`Added "${rawName}" and cast your vote!`);
+                    } catch (err) {
+                        showFeedback('Error saving candidate to cloud.', true);
+                    }
+                } else {
+                    showFeedback(`Added "${rawName}" and cast your vote!`);
+                    await pushMergedToSharedCloud(newId, true);
+                }
+            });
+        }
+
+        if (manualSyncBtn) {
+            manualSyncBtn.addEventListener('click', () => {
+                if (!useFirestore) {
+                    syncFromSharedCloud(true);
+                } else {
+                    updateSyncTimestamp();
+                    showFeedback('Live Firestore sync is active!');
+                }
+            });
+        }
+
+        if (pollManualRefreshBtn) {
+            pollManualRefreshBtn.addEventListener('click', () => {
+                if (!useFirestore) {
+                    syncFromSharedCloud(true);
+                } else {
+                    updateSyncTimestamp();
+                    showFeedback('Live Firestore sync is active!');
+                }
+            });
+        }
+
+        async function initSharedPoll() {
+            // Immediately hydrate voter ID & cached candidates from localStorage so refresh never resets UI
+            currentUserId = getOrCreatePersistentVoterId();
+            if (voterIdDisplay) {
+                voterIdDisplay.textContent = currentUserId;
+            }
+            candidates = readLocalPollCache();
+            renderPoll();
+
+            const hasFirebaseEnv = typeof __firebase_config !== 'undefined' && __firebase_config;
+            if (hasFirebaseEnv) {
+                try {
+                    const firebaseConfig = JSON.parse(__firebase_config);
+                    const app = initializeApp(firebaseConfig);
+                    const auth = getAuth(app);
+                    db = getFirestore(app);
+                    useFirestore = true;
+
+                    // RULE 3: Authenticate FIRST before any Firestore query
+                    if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+                        await signInWithCustomToken(auth, __initial_auth_token);
+                    } else {
+                        await signInAnonymously(auth);
+                    }
+
+                    onAuthStateChanged(auth, (user) => {
+                        if (!user) return;
+                        currentUser = user;
+                        currentUserId = user.uid;
+                        if (voterIdDisplay) {
+                            voterIdDisplay.textContent = currentUserId;
+                        }
+
+                        // RULE 1 & RULE 2: Simple collection query on strict public path
+                        const candidatesCol = collection(db, 'artifacts', appId, 'public', 'data', 'captain_candidates');
+                        onSnapshot(
+                            candidatesCol,
+                            (snapshot) => {
+                                const loaded = [];
+                                snapshot.forEach((docSnap) => {
+                                    loaded.push({ id: docSnap.id, ...docSnap.data() });
+                                });
+                                candidates = loaded;
+                                writeLocalPollCache(candidates);
+                                renderPoll();
+                                updateSyncTimestamp();
+                            },
+                            (error) => {
+                                console.error('Firestore listener error:', error);
+                            }
+                        );
+
+                        // Live Firestore listener for Party RSVPs
+                        const rsvpsCol = collection(db, 'artifacts', appId, 'public', 'data', 'party_rsvps');
+                        onSnapshot(
+                            rsvpsCol,
+                            (snapshot) => {
+                                const loadedRsvps = [];
+                                snapshot.forEach((docSnap) => {
+                                    loadedRsvps.push({ ldap: docSnap.id, ...docSnap.data() });
+                                });
+                                mergeRsvpEntries(loadedRsvps);
+                            },
+                            (error) => {
+                                console.error('Firestore RSVP listener error:', error);
+                            }
+                        );
+                    });
+                    return;
+                } catch (err) {
+                    console.warn('Falling back to shared cloud sync:', err);
+                    useFirestore = false;
+                }
+            }
+
+            if (syncStatusEl) {
+                syncStatusEl.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Poll Live Until 5 PM on Nov 23rd`;
+            }
+
+            // Initial fetch & merge from shared cloud store
+            await syncFromSharedCloud(false);
+
+            // Real-time background polling every 2.5 seconds so all users see new options & votes live
+            setInterval(() => {
+                if (!document.hidden) {
+                    syncFromSharedCloud(false);
+                }
+            }, 2500);
+
+            // Sync immediately whenever a user switches back to this tab or across tabs in the same browser
+            window.addEventListener('focus', () => syncFromSharedCloud(false));
+            window.addEventListener('storage', (e) => {
+                if (e.key === LOCAL_POLL_CACHE_KEY && e.newValue) {
+                    candidates = mergeCandidateLists(JSON.parse(e.newValue), candidates);
+                    renderPoll();
+                }
+            });
+        }
+
+        initSharedPoll();
+
+        // Allow direct local image preview for the ambient background
+        const bgUploadInput = document.getElementById('bg-upload-input');
+        const ambientBgImg = document.getElementById('ambient-bg-img');
+        if (bgUploadInput && ambientBgImg) {
+            bgUploadInput.addEventListener('change', (e) => {
+                const file = e.target.files && e.target.files[0];
+                if (!file) return;
+                const reader = new FileReader();
+                reader.onload = (ev) => {
+                    ambientBgImg.src = ev.target.result;
+                };
+                reader.readAsDataURL(file);
+            });
+        }
+
+        // =========================================================================
+        // 3. MOBILE MENU & ACTIVE TAB HIGHLIGHTING
+        // =========================================================================
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Scroll spy for desktop directory tabs
+        const sections = document.querySelectorAll('section[id]');
+        const navTabs = document.querySelectorAll('.nav-tab');
+
+        window.addEventListener('scroll', () => {
+            let current = 'home';
+            const scrollPos = window.scrollY + 140;
+
+            sections.forEach(section => {
+                const top = section.offsetTop;
+                const height = section.offsetHeight;
+                if (scrollPos >= top && scrollPos < top + height) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navTabs.forEach(tab => {
+                const href = tab.getAttribute('href').substring(1);
+                if (href === current) {
+                    tab.classList.add('bg-google-yellow', 'text-[#1A0B0E]', 'font-bold', 'shadow-sm');
+                    tab.classList.remove('text-amber-100/80', 'font-medium');
+                } else {
+                    tab.classList.remove('bg-google-yellow', 'text-[#1A0B0E]', 'font-bold', 'shadow-sm');
+                    tab.classList.add('text-amber-100/80', 'font-medium');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
